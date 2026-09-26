@@ -1,0 +1,584 @@
+[
+  {
+    "company": "SpaceX",
+    "type": "greenhouse",
+    "token": "spacex"
+  },
+  {
+    "company": "Astranis",
+    "type": "greenhouse",
+    "token": "astranis"
+  },
+  {
+    "company": "Anduril",
+    "type": "greenhouse",
+    "token": "andurilindustries"
+  },
+  {
+    "company": "Stoke Space",
+    "type": "greenhouse",
+    "token": "stokespacetechnologies"
+  },
+  {
+    "company": "K2 Space",
+    "type": "greenhouse",
+    "token": "k2spacecorporation"
+  },
+  {
+    "company": "BETA Technologies",
+    "type": "greenhouse",
+    "token": "betatechnologiesinc"
+  },
+  {
+    "company": "Shield AI",
+    "type": "lever",
+    "token": "shieldai"
+  },
+  {
+    "company": "Hermeus",
+    "type": "lever",
+    "token": "hermeus"
+  },
+  {
+    "company": "CesiumAstro",
+    "type": "lever",
+    "token": "CesiumAstro"
+  },
+  {
+    "company": "E-Space",
+    "type": "lever",
+    "token": "espace"
+  },
+  {
+    "company": "Rocket Lab",
+    "type": "greenhouse",
+    "token": "rocketlab"
+  },
+  {
+    "company": "Star Catcher",
+    "type": "greenhouse",
+    "token": "star-catcher"
+  },
+  {
+    "company": "Varda Space Industries",
+    "type": "greenhouse",
+    "token": "vardaspace"
+  },
+  {
+    "company": "Vast",
+    "type": "greenhouse",
+    "token": "vast"
+  },
+  {
+    "company": "Relativity Space Internships",
+    "type": "greenhouse",
+    "token": "rsinternboard"
+  },
+  {
+    "company": "Relativity Space",
+    "type": "greenhouse",
+    "token": "relativity"
+  },
+  {
+    "company": "Loft Orbital",
+    "type": "lever",
+    "token": "loftorbital"
+  },
+  {
+    "company": "Apex Space",
+    "type": "greenhouse",
+    "token": "apexspace"
+  },
+  {
+    "company": "Impulse Space",
+    "type": "greenhouse",
+    "token": "impulsespace"
+  },
+  {
+    "company": "Hadrian",
+    "type": "greenhouse",
+    "token": "hadrian"
+  },
+  {
+    "company": "Boom Supersonic",
+    "type": "lever",
+    "token": "boomsupersonic"
+  },
+  {
+    "company": "Boeing",
+    "type": "workday",
+    "host": "boeing.wd1.myworkdayjobs.com",
+    "tenant": "boeing",
+    "site": "INTERN"
+  },
+  {
+    "company": "GE Aerospace",
+    "type": "workday",
+    "host": "geaerospace.wd5.myworkdayjobs.com",
+    "tenant": "geaerospace",
+    "site": "GE_ExternalSite"
+  },
+  {
+    "company": "RTX / Raytheon / Collins / Pratt & Whitney",
+    "type": "workday",
+    "host": "globalhr.wd5.myworkdayjobs.com",
+    "tenant": "RTX",
+    "site": "REC_RTX_Ext_Gateway"
+  },
+  {
+    "company": "Lockheed Martin",
+    "type": "careers_page",
+    "urls": [
+      "https://www.lockheedmartinjobs.com/search-jobs/intern/694/1",
+      "https://www.lockheedmartinjobs.com/search-jobs/2027%20intern/694/1"
+    ]
+  },
+  {
+    "company": "Northrop Grumman",
+    "type": "careers_page",
+    "urls": [
+      "https://jobs.northropgrumman.com/careers?query=2027%20intern"
+    ]
+  },
+  {
+    "company": "L3Harris",
+    "type": "careers_page",
+    "urls": [
+      "https://careers.l3harris.com/en/search_jobs/2027/4832/1/search_jobs"
+    ]
+  },
+  {
+    "company": "Honeywell",
+    "type": "careers_page",
+    "urls": [
+      "https://careers.honeywell.com/en/sites/Honeywell/jobs?keyword=Summer%202027%20Intern"
+    ]
+  },
+  {
+    "company": "Gulfstream Aerospace",
+    "type": "careers_page",
+    "urls": [
+      "https://careers.gulfstream.com/go/Entry-level-Positions-and-Internships/8311500?q=&sortColumn=referencedate&sortDirection=desc"
+    ]
+  },
+  {
+    "company": "Bell / Textron",
+    "type": "careers_page",
+    "urls": [
+      "https://textron.taleo.net/careersection/textron_ur/jobsearch.ftl?lang=en"
+    ]
+  },
+  {
+    "company": "Firefly Aerospace",
+    "type": "careers_page",
+    "urls": [
+      "https://fireflyspace.com/careers/"
+    ]
+  },
+  {
+    "company": "Intuitive Machines",
+    "type": "careers_page",
+    "urls": [
+      "https://www.intuitivemachines.com/careers"
+    ]
+  },
+  {
+    "company": "Axiom Space",
+    "type": "careers_page",
+    "urls": [
+      "https://www.axiomspace.com/careers"
+    ]
+  },
+  {
+    "company": "United Launch Alliance",
+    "type": "careers_page",
+    "urls": [
+      "https://jobs.ulalaunch.com/go/INTERNSHIPS/9628400/"
+    ]
+  },
+  {
+    "company": "Amentum",
+    "type": "careers_page",
+    "urls": [
+      "https://www.amentumcareers.com/jobs/search?q=intern"
+    ]
+  },
+  {
+    "company": "Barrios Technology",
+    "type": "careers_page",
+    "urls": [
+      "https://careers-barrios.icims.com/jobs/search?ss=1&searchKeyword=intern"
+    ]
+  },
+  {
+    "company": "KBR",
+    "type": "careers_page",
+    "urls": [
+      "https://careers.kbr.com/us/en/search-results?keywords=intern"
+    ]
+  },
+  {
+    "company": "Leidos",
+    "type": "careers_page",
+    "urls": [
+      "https://careers.leidos.com/search/jobs?q=intern"
+    ]
+  },
+  {
+    "company": "CACI",
+    "type": "careers_page",
+    "urls": [
+      "https://careers.caci.com/global/en/search-results?keywords=intern"
+    ]
+  },
+  {
+    "company": "Oceaneering",
+    "type": "careers_page",
+    "urls": [
+      "https://careers.oceaneering.com/global/en/search-results?keywords=intern"
+    ]
+  },
+  {
+    "company": "AeroVironment",
+    "type": "careers_page",
+    "urls": [
+      "https://avav.wd1.myworkdayjobs.com/avav?q=intern"
+    ]
+  },
+  {
+    "company": "Sierra Nevada Corporation",
+    "type": "careers_page",
+    "urls": [
+      "https://www.sncorp.com/careers/open-positions/"
+    ]
+  },
+  {
+    "company": "Sierra Space",
+    "type": "careers_page",
+    "urls": [
+      "https://www.sierraspace.com/careers/"
+    ]
+  },
+  {
+    "company": "Redwire",
+    "type": "careers_page",
+    "urls": [
+      "https://redwirespace.com/careers/"
+    ]
+  },
+  {
+    "company": "Ursa Major",
+    "type": "careers_page",
+    "urls": [
+      "https://www.ursamajor.com/careers"
+    ]
+  },
+  {
+    "company": "Lunar Outpost",
+    "type": "careers_page",
+    "urls": [
+      "https://www.lunaroutpost.com/careers"
+    ]
+  },
+  {
+    "company": "Venturi Astrolab",
+    "type": "careers_page",
+    "urls": [
+      "https://www.astrolab.space/careers"
+    ]
+  },
+  {
+    "company": "Joby Aviation",
+    "type": "careers_page",
+    "urls": [
+      "https://www.jobyaviation.com/careers/"
+    ]
+  },
+  {
+    "company": "Archer Aviation",
+    "type": "careers_page",
+    "urls": [
+      "https://www.archer.com/careers"
+    ]
+  },
+  {
+    "company": "Wisk Aero",
+    "type": "careers_page",
+    "urls": [
+      "https://wisk.aero/careers/"
+    ]
+  },
+  {
+    "company": "Moog",
+    "type": "careers_page",
+    "urls": [
+      "https://careers.moog.com/"
+    ]
+  },
+  {
+    "company": "Safran",
+    "type": "careers_page",
+    "urls": [
+      "https://www.safran-group.com/jobs?search=intern"
+    ]
+  },
+  {
+    "company": "General Atomics Aeronautical Systems",
+    "type": "careers_page",
+    "urls": [
+      "https://www.ga-careers.com/search-jobs/intern/499/1"
+    ]
+  },
+  {
+    "company": "BAE Systems",
+    "type": "careers_page",
+    "urls": [
+      "https://jobs.baesystems.com/global/en/search-results?keywords=intern"
+    ]
+  },
+  {
+    "company": "Blue Origin",
+    "type": "careers_page",
+    "urls": [
+      "https://www.blueorigin.com/careers/search?search=intern"
+    ]
+  },
+  {
+    "company": "The Aerospace Corporation",
+    "type": "careers_page",
+    "urls": [
+      "https://aero.wd5.myworkdayjobs.com/External?q=intern"
+    ]
+  },
+  {
+    "company": "Parsons",
+    "type": "careers_page",
+    "urls": [
+      "https://jobs.parsons.com/jobs/search?q=intern"
+    ]
+  },
+  {
+    "company": "Peraton",
+    "type": "careers_page",
+    "urls": [
+      "https://careers.peraton.com/jobs/search?query=intern"
+    ]
+  },
+  {
+    "company": "SAIC",
+    "type": "careers_page",
+    "urls": [
+      "https://jobs.saic.com/search/intern/jobs"
+    ]
+  },
+  {
+    "company": "Kratos Defense",
+    "type": "careers_page",
+    "urls": [
+      "https://careers.kratosdefense.com/search/jobs?q=intern"
+    ]
+  },
+  {
+    "company": "General Dynamics Mission Systems",
+    "type": "careers_page",
+    "urls": [
+      "https://careers-gdms.icims.com/jobs/search?ss=1&searchKeyword=intern"
+    ]
+  },
+  {
+    "company": "Johns Hopkins APL",
+    "type": "careers_page",
+    "urls": [
+      "https://careers.jhuapl.edu/jobs?keywords=intern"
+    ]
+  },
+  {
+    "company": "MIT Lincoln Laboratory",
+    "type": "careers_page",
+    "urls": [
+      "https://careers.ll.mit.edu/search/?q=intern"
+    ]
+  },
+  {
+    "company": "Southwest Research Institute",
+    "type": "careers_page",
+    "urls": [
+      "https://resapp.swri.org/ResApp/Job_Search.aspx"
+    ]
+  },
+  {
+    "company": "NASA",
+    "type": "careers_page",
+    "urls": [
+      "https://www.nasa.gov/learning-resources/internship-programs/"
+    ]
+  },
+  {
+    "company": "NASA JPL / Caltech",
+    "type": "careers_page",
+    "urls": [
+      "https://www.jpl.jobs/internships"
+    ]
+  },
+  {
+    "company": "Scaled Composites",
+    "type": "careers_page",
+    "urls": [
+      "https://scaled.com/internship/"
+    ]
+  },
+  {
+    "company": "Stratolaunch",
+    "type": "careers_page",
+    "urls": [
+      "https://www.stratolaunch.com/careers/"
+    ]
+  },
+  {
+    "company": "Virgin Galactic",
+    "type": "careers_page",
+    "urls": [
+      "https://careers.virgingalactic.com/"
+    ]
+  },
+  {
+    "company": "Maxar Space Systems",
+    "type": "careers_page",
+    "urls": [
+      "https://maxar.wd1.myworkdayjobs.com/Maxar?q=intern"
+    ]
+  },
+  {
+    "company": "Terran Orbital",
+    "type": "careers_page",
+    "urls": [
+      "https://www.terranorbital.com/careers"
+    ]
+  },
+  {
+    "company": "York Space Systems",
+    "type": "careers_page",
+    "urls": [
+      "https://www.yorkspacesystems.com/careers"
+    ]
+  },
+  {
+    "company": "Planet Labs",
+    "type": "careers_page",
+    "urls": [
+      "https://www.planet.com/company/careers/"
+    ]
+  },
+  {
+    "company": "BlackSky",
+    "type": "careers_page",
+    "urls": [
+      "https://www.blacksky.com/careers/"
+    ]
+  },
+  {
+    "company": "Capella Space",
+    "type": "careers_page",
+    "urls": [
+      "https://www.capellaspace.com/careers/"
+    ]
+  },
+  {
+    "company": "Muon Space",
+    "type": "careers_page",
+    "urls": [
+      "https://www.muonspace.com/careers"
+    ]
+  },
+  {
+    "company": "Embraer",
+    "type": "careers_page",
+    "urls": [
+      "https://embraer.com/global/en/careers"
+    ]
+  },
+  {
+    "company": "Honda Aircraft Company",
+    "type": "careers_page",
+    "urls": [
+      "https://www.hondajet.com/en/careers"
+    ]
+  },
+  {
+    "company": "Bombardier",
+    "type": "careers_page",
+    "urls": [
+      "https://bombardier.com/en/careers"
+    ]
+  },
+  {
+    "company": "Airbus Americas",
+    "type": "careers_page",
+    "urls": [
+      "https://ag.wd3.myworkdayjobs.com/Airbus?q=intern"
+    ]
+  },
+  {
+    "company": "Parker Aerospace",
+    "type": "careers_page",
+    "urls": [
+      "https://parkercareers.ttcportals.com/search/jobs?q=intern"
+    ]
+  },
+  {
+    "company": "Eaton Aerospace",
+    "type": "careers_page",
+    "urls": [
+      "https://eaton.eightfold.ai/careers?query=intern"
+    ]
+  },
+  {
+    "company": "Curtiss-Wright",
+    "type": "careers_page",
+    "urls": [
+      "https://careers.curtisswright.com/search/jobs?q=intern"
+    ]
+  },
+  {
+    "company": "Woodward",
+    "type": "careers_page",
+    "urls": [
+      "https://woodward.wd5.myworkdayjobs.com/Woodward?q=intern"
+    ]
+  },
+  {
+    "company": "Howmet Aerospace",
+    "type": "careers_page",
+    "urls": [
+      "https://howmet.wd5.myworkdayjobs.com/Howmet_Careers?q=intern"
+    ]
+  },
+  {
+    "company": "GKN Aerospace",
+    "type": "careers_page",
+    "urls": [
+      "https://careers.gknaerospace.com/search/?q=intern"
+    ]
+  },
+  {
+    "company": "Crane Aerospace & Electronics",
+    "type": "careers_page",
+    "urls": [
+      "https://jobs.craneco.com/search/?q=intern"
+    ]
+  },
+  {
+    "company": "StandardAero",
+    "type": "careers_page",
+    "urls": [
+      "https://standardaero.wd1.myworkdayjobs.com/External?q=intern"
+    ]
+  },
+  {
+    "company": "NASA / USAJobs Pathways",
+    "type": "careers_page",
+    "urls": [
+      "https://www.usajobs.gov/Search/Results?k=NASA%20internship"
+    ]
+  }
+]
