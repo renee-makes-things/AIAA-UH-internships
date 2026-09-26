@@ -1,0 +1,55 @@
+name: Daily AIAA Internship Scan
+
+on:
+  # Lets you run it manually from the Actions tab
+  workflow_dispatch:
+
+  # Run every day at 9:00 AM Central
+  # 14:00 UTC = 9 AM CDT
+  schedule:
+    - cron: "0 14 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  scan-internships:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run internship finder
+        run: python internship_finder.py
+
+      - name: Save updated internship data
+        run: |
+          git config user.name "AIAA Internship Bot"
+          git config user.email "actions@github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No internship changes today."
+          else
+            git commit -m "Update internship listings"
+            git push
+          fi
+
+      - name: Upload latest internship tracker
+        uses: actions/upload-artifact@v4
+        with:
+          name: AIAA-UH-Summer-2027-Internships
+          path: |
+            AIAA_UH_Summer_2027_Internships.xlsx
+            data/jobs.csv
+          if-no-files-found: warn
