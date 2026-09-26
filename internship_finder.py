@@ -130,6 +130,19 @@ def careers_page(c):
                             'location':'','deadline':extract_deadline(text),'url':href})
     return out
 
+def classify_error(exc):
+    """Map fetch failures to a source-health state without treating them as zero jobs."""
+    msg=str(exc)
+    if any(code in msg for code in ('403 Client Error','429 Client Error')):
+        return 'BLOCKED', msg[:300]
+    return 'ERROR', msg[:300]
+
+def health_record(c, state, count=0, message=''):
+    return {
+        'company': c['company'], 'source_type': c.get('type',''), 'health': state,
+        'matches': count, 'last_checked': TODAY, 'message': message
+    }
+
 def load_old():
     if not DB.exists(): return {}
     with DB.open(newline='',encoding='utf-8') as f: return {r['key']:r for r in csv.DictReader(f)}
@@ -161,7 +174,24 @@ def add_view(wb, title, rows):
     style_sheet(ws)
     return ws
 
-def export_xlsx(rows):
+def add_source_health(wb, health):
+    ws=wb.create_sheet('SOURCE HEALTH')
+    ws.append(['Company','Source Type','Health','Matches','Last Checked','Notes'])
+    for h in sorted(health,key=lambda x:(x['health']!='OK',x['health'],x['company'])):
+        ws.append([h['company'],h['source_type'],h['health'],h['matches'],h['last_checked'],h['message']])
+    fill=PatternFill('solid',fgColor='16324F')
+    for cell in ws[1]:
+        cell.fill=fill; cell.font=Font(color='FFFFFF',bold=True); cell.alignment=Alignment(wrap_text=True)
+    widths=[34,18,14,12,16,70]
+    for i,w in enumerate(widths,1): ws.column_dimensions[get_column_letter(i)].width=w
+    ws.freeze_panes='A2'; ws.auto_filter.ref=ws.dimensions
+    health_fills={'OK':'D9EAD3','UNKNOWN':'FFF2CC','BLOCKED':'FCE5CD','ERROR':'F4CCCC'}
+    for row in ws.iter_rows(min_row=2):
+        row[2].fill=PatternFill('solid',fgColor=health_fills.get(row[2].value,'FFFFFF'))
+        for c in row: c.alignment=Alignment(vertical='top',wrap_text=True)
+    return ws
+
+def export_xlsx(rows, health):
     wb=Workbook(); wb.remove(wb.active)
     live=[r for r in rows if r['status'] in ('NEW','OPEN')]
     ordered=sorted(rows,key=lambda x:(x['status']!='NEW',x['status']!='OPEN',x['company'],x['title']))
@@ -195,25 +225,48 @@ def export_xlsx(rows):
     for k,v in metrics: ws.append([k,v])
     ws['A3'].font=ws['B3'].font=Font(bold=True); ws.column_dimensions['A'].width=28; ws.column_dimensions['B'].width=14
     ws['A10']='Updated'; ws['B10']=TODAY
+    ws['A12']='SOURCE HEALTH'; ws['A12'].font=Font(bold=True)
+    for i,(label,state) in enumerate([('Sources OK','OK'),('Unknown / unverified','UNKNOWN'),('Blocked','BLOCKED'),('Errors','ERROR')],13):
+        ws.cell(i,1,label); ws.cell(i,2,sum(h['health']==state for h in health))
+    add_source_health(wb, health)
     wb.save(XLSX)
 
 def main():
     companies=json.loads((ROOT/'companies.json').read_text())
-    found={}
+    found={}; health=[]; successful_companies=set()
     for c in companies:
         try:
             jobs=greenhouse(c) if c['type']=='greenhouse' else lever(c) if c['type']=='lever' else workday(c) if c['type']=='workday' else careers_page(c) if c['type']=='careers_page' else []
+            # API-backed sources can reliably report zero. Generic HTML pages cannot: many
+            # render jobs in JavaScript, so zero from them is UNKNOWN unless explicitly trusted.
+            if c['type']=='careers_page' and len(jobs)==0 and not c.get('trust_zero',False):
+                state='UNKNOWN'; msg='Page fetched, but no verifiable Summer 2027 engineering internships were parsed; zero is not treated as authoritative.'
+            else:
+                state='OK'; msg='Successful source check.'; successful_companies.add(c['company'])
+            health.append(health_record(c,state,len(jobs),msg))
             for j in jobs: found[j['key']]=j
-            print(f"{c['company']}: {len(jobs)} matches")
-        except Exception as e: print(f"WARNING {c['company']}: {e}")
+            print(f"{c['company']}: {state} - {len(jobs)} matches")
+        except Exception as e:
+            state,msg=classify_error(e); health.append(health_record(c,state,0,msg))
+            print(f"WARNING {c['company']}: {state} - {msg}")
+
     old=load_old(); rows=[]
     for key,j in found.items():
         prev=old.get(key); j['first_seen']=prev['first_seen'] if prev else TODAY
         j['last_seen']=TODAY; j['status']='OPEN' if prev else 'NEW'; rows.append(j)
+
+    # Only close a missing job if its company was successfully checked today.
+    # If the source is UNKNOWN/BLOCKED/ERROR, preserve its last known status/data.
     for key,prev in old.items():
         if key not in found:
-            prev['status']='CLOSED'; rows.append(prev)
-    save(rows); export_xlsx(rows)
-    print(f"Found {len(found)} matching live internships; {sum(r['status']=='NEW' for r in rows)} new.")
+            if prev.get('company') in successful_companies:
+                prev['status']='CLOSED'
+            rows.append(prev)
+
+    save(rows); export_xlsx(rows, health)
+    ok=sum(h['health']=='OK' for h in health); unknown=sum(h['health']=='UNKNOWN' for h in health)
+    blocked=sum(h['health']=='BLOCKED' for h in health); errors=sum(h['health']=='ERROR' for h in health)
+    print(f"Source health: {ok} OK, {unknown} UNKNOWN, {blocked} BLOCKED, {errors} ERROR")
+    print(f"Found {len(found)} matching internships from today's successful/partial checks; {sum(r['status']=='NEW' for r in rows)} new in database.")
 
 if __name__=='__main__': main()
