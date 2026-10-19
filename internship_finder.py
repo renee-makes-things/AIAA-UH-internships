@@ -3,7 +3,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment
 from openpyxl.utils import get_column_letter
@@ -118,32 +118,89 @@ def lever(c):
                         'location':cats.get('location',''),'deadline':extract_deadline(text),'url':j.get('hostedUrl','')})
     return out
 
+def _job(company, key, title, text, location, url):
+    stage=role_stage(title,text)
+    if not stage: return None
+    return {'key':key,'company':company,'title':title,'stage':stage,'text':text,
+            'location':location or '','deadline':extract_deadline(text),'url':url or ''}
+
 def workday(c):
-    # Workday public CXS endpoint. Different employers expose different site names,
-    # so host/tenant/site live in companies.json instead of being hard-coded.
     base=f"https://{c['host']}/wday/cxs/{c['tenant']}/{c['site']}"
-    out=[]; offset=0; limit=20
-    while offset < 200:
-        r=requests.post(base+'/jobs',json={'appliedFacets':{},'limit':limit,'offset':offset,'searchText':'2027 internship'},timeout=30)
-        r.raise_for_status(); data=r.json(); posts=data.get('jobPostings',[])
-        if not posts: break
-        for j in posts:
-            title=j.get('title',''); ext=j.get('externalPath','')
-            # Fetch detail because Workday search results often omit the full description.
-            try:
-                d=requests.get(base+ext,timeout=30).json().get('jobPostingInfo',{})
-            except Exception:
-                d={}
-            text=' '.join([title, clean(d.get('jobDescription','')), str(d.get('additionalLocations',''))])
-            stage=role_stage(title,text)
-            if stage:
-                url=d.get('externalUrl') or ('https://'+c['host']+ext)
-                loc=d.get('location') or j.get('locationsText','')
-                jid=d.get('jobReqId') or ext
-                out.append({'key':f"wd:{c['tenant']}:{jid}",'company':c['company'],'title':title,'stage':stage,'text':text,'location':loc,'deadline':extract_deadline(text),'url':url})
-        offset += limit
-        if offset >= data.get('total',0): break
+    out=[]; seen=set()
+    searches=c.get('search_texts') or ['2027','intern','early career','entry level','new grad','engineer I']
+    for query in searches:
+        offset=0; limit=int(c.get('limit',20)); max_pages=int(c.get('max_pages',5))
+        for _ in range(max_pages):
+            r=requests.post(base+'/jobs',json={'appliedFacets':{},'limit':limit,'offset':offset,'searchText':query},timeout=30)
+            r.raise_for_status(); data=r.json(); posts=data.get('jobPostings',[])
+            if not posts: break
+            for j in posts:
+                ext=j.get('externalPath',''); title=j.get('title','')
+                if not ext or ext in seen: continue
+                seen.add(ext)
+                try: d=requests.get(base+ext,timeout=30).json().get('jobPostingInfo',{})
+                except Exception: d={}
+                text=' '.join([title,clean(d.get('jobDescription','')),str(d.get('additionalLocations',''))])
+                x=_job(c['company'],f"wd:{c['tenant']}:{d.get('jobReqId') or ext}",title,text,
+                       d.get('location') or j.get('locationsText',''),d.get('externalUrl') or ('https://'+c['host']+ext))
+                if x: out.append(x)
+            offset += limit
+            if offset >= data.get('total',0): break
     return out
+
+def sitemap_jobs(c):
+    out=[]; seen=set(); headers={'User-Agent':'Mozilla/5.0 AIAA-UH-Opportunity-Finder/1.0'}
+    patterns=[re.compile(p,re.I) for p in c.get('job_url_patterns',[])]
+    for sm in c.get('sitemaps',[]):
+        r=requests.get(sm,headers=headers,timeout=45); r.raise_for_status()
+        soup=BeautifulSoup(r.text,'xml')
+        urls=[x.get_text(strip=True) for x in soup.find_all('loc')]
+        # Follow sitemap indexes one level.
+        if any(u.lower().endswith('.xml') for u in urls[:20]):
+            nested=[]
+            for u in urls[:int(c.get('max_sitemaps',20))]:
+                if not u.lower().endswith('.xml'): continue
+                try:
+                    rr=requests.get(u,headers=headers,timeout=30); rr.raise_for_status()
+                    nested.extend(x.get_text(strip=True) for x in BeautifulSoup(rr.text,'xml').find_all('loc'))
+                except Exception: pass
+            urls=nested
+        if patterns: urls=[u for u in urls if any(p.search(u) for p in patterns)]
+        for url in urls[:int(c.get('detail_limit',160))]:
+            if url in seen: continue
+            seen.add(url)
+            try:
+                rr=requests.get(url+c.get('detail_url_suffix',''),headers=headers,timeout=30); rr.raise_for_status()
+                page=BeautifulSoup(rr.text,'html.parser')
+                title=(page.find('h1') or page.find('title'))
+                title=clean(title.get_text(' ',strip=True) if title else '')
+                text=clean(page.get_text(' ',strip=True))
+                loc=''
+                m=re.search(r'(?:Location|Locations?)\s*[:\-]?\s*([^|]{2,120})',text,re.I)
+                if m: loc=m.group(1).strip()
+                x=_job(c['company'],'sitemap:'+c['company']+':'+url,title,text,loc,url)
+                if x: out.append(x)
+            except Exception: continue
+    return out
+
+def rss_jobs(c):
+    # Some career platforms expose XML sitemaps through what is effectively a feed.
+    cc=dict(c); cc['sitemaps']=[c['url']]
+    return sitemap_jobs(cc)
+
+def phenom(c):
+    # Phenom sites vary by tenant. Their server-rendered search results are still
+    # useful when queried with several high-signal early-career terms.
+    cc=dict(c); base=c['base_url'].rstrip('/')
+    terms=c.get('search_texts') or ['2027','intern','early career','entry level','new grad']
+    cc['urls']=[base+'/global/en/search-results?keywords='+requests.utils.quote(q) for q in terms]
+    return careers_page(cc)
+
+def eightfold(c):
+    base=c['base_url'].rstrip('/')
+    terms=c.get('search_texts') or ['2027','intern','early career','entry level','new grad']
+    cc=dict(c); cc['urls']=[base+'/careers?query='+requests.utils.quote(q) for q in terms]
+    return careers_page(cc)
 
 
 def careers_page(c):
@@ -216,10 +273,7 @@ def export_roles_json(rows):
             'apply_url':r.get('url','')
         })
     path=ROOT/'data'/'roles.json'; path.parent.mkdir(exist_ok=True)
-    payload=json.dumps({'updated_at':TODAY,'roles':live},indent=2)
-    path.write_text(payload,encoding='utf-8')
-    pages=ROOT/'docs'/'data'/'roles.json'; pages.parent.mkdir(parents=True,exist_ok=True)
-    pages.write_text(payload,encoding='utf-8')
+    path.write_text(json.dumps({'updated_at':TODAY,'roles':live},indent=2),encoding='utf-8')
 
 def style_sheet(ws):
     fill=PatternFill('solid',fgColor='16324F')
@@ -304,10 +358,13 @@ def main():
     found={}; health=[]; successful_companies=set()
     for c in companies:
         try:
-            jobs=greenhouse(c) if c['type']=='greenhouse' else lever(c) if c['type']=='lever' else workday(c) if c['type']=='workday' else careers_page(c) if c['type']=='careers_page' else []
+            adapters={'greenhouse':greenhouse,'lever':lever,'workday':workday,'careers_page':careers_page,
+                      'sitemap_jobs':sitemap_jobs,'rss_jobs':rss_jobs,'phenom':phenom,'eightfold':eightfold}
+            if c['type'] not in adapters: raise ValueError(f"Unsupported source type: {c['type']}")
+            jobs=adapters[c['type']](c)
             # API-backed sources can reliably report zero. Generic HTML pages cannot: many
             # render jobs in JavaScript, so zero from them is UNKNOWN unless explicitly trusted.
-            if c['type']=='careers_page' and len(jobs)==0 and not c.get('trust_zero',False):
+            if c['type'] in ('careers_page','phenom','eightfold') and len(jobs)==0 and not c.get('trust_zero',False):
                 state='UNKNOWN'; msg='Page fetched, but no verifiable Summer 2027 engineering internships were parsed; zero is not treated as authoritative.'
             else:
                 state='OK'; msg='Successful source check.'; successful_companies.add(c['company'])
