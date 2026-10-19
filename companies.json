@@ -113,32 +113,79 @@
   },
   {
     "company": "GE Aerospace",
-    "type": "workday",
+    "type": "phenom",
     "host": "geaerospace.wd5.myworkdayjobs.com",
     "tenant": "geaerospace",
-    "site": "GE_ExternalSite"
+    "site": "GE_ExternalSite",
+    "base_url": "https://careers.geaerospace.com",
+    "search_texts": [
+      "2027",
+      "entry level",
+      "early career",
+      "new grad",
+      "mechanical engineer",
+      "aerospace engineer",
+      "systems engineer",
+      "propulsion engineer",
+      "manufacturing engineer",
+      "engineering intern",
+      "Edison Engineering Development Program"
+    ],
+    "limit": 50
   },
   {
     "company": "RTX / Raytheon / Collins / Pratt & Whitney",
-    "type": "workday",
+    "type": "phenom",
     "host": "globalhr.wd5.myworkdayjobs.com",
     "tenant": "RTX",
-    "site": "REC_RTX_Ext_Gateway"
+    "site": "REC_RTX_Ext_Gateway",
+    "base_url": "https://careers.rtx.com",
+    "search_texts": [
+      "2027",
+      "entry level",
+      "early career",
+      "software engineer",
+      "mechanical engineer",
+      "aerospace engineer",
+      "systems engineer",
+      "propulsion engineer",
+      "avionics",
+      "manufacturing engineer",
+      "engineering intern"
+    ],
+    "limit": 50
   },
   {
     "company": "Lockheed Martin",
-    "type": "careers_page",
+    "type": "sitemap_jobs",
     "urls": [
       "https://www.lockheedmartinjobs.com/search-jobs/intern/694/1",
       "https://www.lockheedmartinjobs.com/search-jobs/2027%20intern/694/1"
-    ]
+    ],
+    "sitemaps": [
+      "https://www.lockheedmartinjobs.com/sitemap.xml"
+    ],
+    "detail_limit": 80
   },
   {
     "company": "Northrop Grumman",
-    "type": "careers_page",
+    "type": "workday",
     "urls": [
       "https://jobs.northropgrumman.com/careers?query=2027%20intern"
-    ]
+    ],
+    "host": "ngc.wd1.myworkdayjobs.com",
+    "tenant": "ngc",
+    "site": "Northrop_Grumman_External_Site",
+    "search_texts": [
+      "2027",
+      "early career",
+      "aerospace engineer",
+      "mechanical engineer",
+      "manufacturing engineer",
+      "systems engineer",
+      "engineering intern"
+    ],
+    "limit": 50
   },
   {
     "company": "L3Harris",
@@ -156,10 +203,14 @@
   },
   {
     "company": "Gulfstream Aerospace",
-    "type": "careers_page",
+    "type": "sitemap_jobs",
     "urls": [
       "https://careers.gulfstream.com/go/Entry-level-Positions-and-Internships/8311500?q=&sortColumn=referencedate&sortDirection=desc"
-    ]
+    ],
+    "sitemaps": [
+      "https://careers.gulfstream.com/sitemap.xml"
+    ],
+    "detail_limit": 80
   },
   {
     "company": "Bell / Textron",
@@ -191,17 +242,25 @@
   },
   {
     "company": "United Launch Alliance",
-    "type": "careers_page",
+    "type": "sitemap_jobs",
     "urls": [
       "https://jobs.ulalaunch.com/go/INTERNSHIPS/9628400/"
-    ]
+    ],
+    "sitemaps": [
+      "https://jobs.ulalaunch.com/sitemap.xml"
+    ],
+    "detail_limit": 80
   },
   {
     "company": "Amentum",
-    "type": "careers_page",
+    "type": "sitemap_jobs",
     "urls": [
       "https://www.amentumcareers.com/jobs/search?q=intern"
-    ]
+    ],
+    "sitemaps": [
+      "https://www.amentumcareers.com/sitemap.xml"
+    ],
+    "detail_limit": 140
   },
   {
     "company": "Barrios Technology",
@@ -212,17 +271,35 @@
   },
   {
     "company": "KBR",
-    "type": "careers_page",
+    "type": "phenom",
     "urls": [
       "https://careers.kbr.com/us/en/search-results?keywords=intern"
-    ]
+    ],
+    "base_url": "https://careers.kbr.com",
+    "search_texts": [
+      "2027",
+      "entry level",
+      "early career",
+      "junior",
+      "mechanical engineer",
+      "aerospace engineer",
+      "flight hardware",
+      "space systems",
+      "systems engineer",
+      "engineering intern"
+    ],
+    "limit": 50
   },
   {
     "company": "Leidos",
-    "type": "careers_page",
+    "type": "workday",
     "urls": [
       "https://careers.leidos.com/search/jobs?q=intern"
-    ]
+    ],
+    "host": "leidos.wd5.myworkdayjobs.com",
+    "tenant": "leidos",
+    "site": "External",
+    "limit": 20
   },
   {
     "company": "CACI",
@@ -254,10 +331,29 @@
   },
   {
     "company": "Sierra Space",
-    "type": "careers_page",
+    "type": "workday",
     "urls": [
       "https://www.sierraspace.com/careers/"
-    ]
+    ],
+    "host": "sierraspace.wd1.myworkdayjobs.com",
+    "tenant": "sierraspace",
+    "site": "Sierra_Space_External_Career_Site",
+    "search_texts": [
+      "2027",
+      "intern",
+      "early career",
+      "entry level",
+      "associate",
+      "engineer I",
+      "mechanical engineer",
+      "aerospace engineer",
+      "propulsion engineer",
+      "systems engineer",
+      "manufacturing engineer"
+    ],
+    "limit": 20,
+    "max_pages": 12,
+    "detail_limit": 160
   },
   {
     "company": "Redwire",
@@ -289,17 +385,23 @@
   },
   {
     "company": "Joby Aviation",
-    "type": "careers_page",
+    "type": "sitemap_jobs",
     "urls": [
       "https://www.jobyaviation.com/careers/"
-    ]
+    ],
+    "sitemaps": [
+      "https://careers-jobyaviation.icims.com/sitemap.xml"
+    ],
+    "detail_limit": 120,
+    "detail_url_suffix": "?in_iframe=1"
   },
   {
     "company": "Archer Aviation",
-    "type": "careers_page",
+    "type": "greenhouse",
     "urls": [
       "https://www.archer.com/careers"
-    ]
+    ],
+    "token": "archer56"
   },
   {
     "company": "Wisk Aero",
@@ -310,10 +412,27 @@
   },
   {
     "company": "Moog",
-    "type": "careers_page",
+    "type": "workday",
     "urls": [
       "https://careers.moog.com/"
-    ]
+    ],
+    "host": "moog.wd5.myworkdayjobs.com",
+    "tenant": "moog",
+    "site": "MOOG_External_Career_Site",
+    "search_texts": [
+      "2027",
+      "entry level",
+      "early career",
+      "graduate",
+      "mechanical engineer",
+      "aerospace engineer",
+      "flight controls",
+      "manufacturing engineer",
+      "engineering intern"
+    ],
+    "limit": 20,
+    "max_pages": 3,
+    "detail_limit": 100
   },
   {
     "company": "Safran",
@@ -331,24 +450,59 @@
   },
   {
     "company": "BAE Systems",
-    "type": "careers_page",
+    "type": "phenom",
     "urls": [
       "https://jobs.baesystems.com/global/en/search-results?keywords=intern"
-    ]
+    ],
+    "base_url": "https://jobs.baesystems.com",
+    "search_texts": [
+      "2027",
+      "entry level",
+      "early career",
+      "mechanical engineer",
+      "aerospace engineer",
+      "systems engineer",
+      "avionics",
+      "manufacturing engineer",
+      "engineering intern"
+    ],
+    "limit": 50
   },
   {
     "company": "Blue Origin",
-    "type": "careers_page",
+    "type": "workday",
     "urls": [
       "https://www.blueorigin.com/careers/search?search=intern"
-    ]
+    ],
+    "host": "blueorigin.wd5.myworkdayjobs.com",
+    "tenant": "blueorigin",
+    "site": "BlueOrigin",
+    "limit": 20
   },
   {
     "company": "The Aerospace Corporation",
-    "type": "careers_page",
+    "type": "workday",
     "urls": [
       "https://aero.wd5.myworkdayjobs.com/External?q=intern"
-    ]
+    ],
+    "host": "aero.wd5.myworkdayjobs.com",
+    "tenant": "aero",
+    "site": "External",
+    "search_texts": [
+      "2027",
+      "entry level",
+      "early career",
+      "new grad",
+      "aerospace engineer",
+      "space systems",
+      "GNC",
+      "mechanical engineer",
+      "systems engineer",
+      "engineering intern"
+    ],
+    "limit": 20,
+    "max_pages": 3,
+    "detail_limit": 100
   },
   {
     "company": "Parsons",
@@ -359,10 +513,14 @@
   },
   {
     "company": "Peraton",
-    "type": "careers_page",
+    "type": "sitemap_jobs",
     "urls": [
       "https://careers.peraton.com/jobs/search?query=intern"
-    ]
+    ],
+    "sitemaps": [
+      "https://www.careers.peraton.com/sitemap.xml"
+    ],
+    "detail_limit": 140
   },
   {
     "company": "SAIC",
@@ -387,17 +545,22 @@
   },
   {
     "company": "Johns Hopkins APL",
-    "type": "careers_page",
+    "type": "sitemap_jobs",
     "urls": [
       "https://careers.jhuapl.edu/jobs?keywords=intern"
-    ]
+    ],
+    "sitemaps": [
+      "https://careers.jhuapl.edu/sitemap.xml"
+    ],
+    "detail_limit": 160
   },
   {
     "company": "MIT Lincoln Laboratory",
-    "type": "careers_page",
+    "type": "rss_jobs",
     "urls": [
       "https://careers.ll.mit.edu/search/?q=intern"
-    ]
+    ],
+    "url": "https://careers.ll.mit.edu/sitemap.xml"
   },
   {
     "company": "Southwest Research Institute",
@@ -527,10 +690,23 @@
   },
   {
     "company": "Eaton Aerospace",
-    "type": "careers_page",
+    "type": "eightfold",
     "urls": [
       "https://eaton.eightfold.ai/careers?query=intern"
-    ]
+    ],
+    "base_url": "https://eaton.eightfold.ai",
+    "search_texts": [
+      "2027",
+      "early career",
+      "development program",
+      "mechanical engineer",
+      "product development engineer",
+      "manufacturing engineer",
+      "engineering intern",
+      "engineering co-op"
+    ],
+    "max_pages": 10,
+    "detail_limit": 120
   },
   {
     "company": "Curtiss-Wright",
@@ -541,10 +717,27 @@
   },
   {
     "company": "Woodward",
-    "type": "careers_page",
+    "type": "workday",
     "urls": [
       "https://woodward.wd5.myworkdayjobs.com/Woodward?q=intern"
-    ]
+    ],
+    "host": "woodward.wd5.myworkdayjobs.com",
+    "tenant": "woodward",
+    "site": "woodward",
+    "search_texts": [
+      "2027",
+      "entry level",
+      "early career",
+      "rotation program",
+      "mechanical engineer",
+      "aerospace engineer",
+      "controls engineer",
+      "manufacturing engineer",
+      "engineering intern"
+    ],
+    "limit": 20,
+    "max_pages": 3,
+    "detail_limit": 100
   },
   {
     "company": "Howmet Aerospace",
@@ -579,6 +772,38 @@
     "type": "careers_page",
     "urls": [
       "https://www.usajobs.gov/Search/Results?k=NASA%20internship"
+    ]
+  },
+  {
+    "company": "Caterpillar",
+    "type": "workday",
+    "host": "cat.wd5.myworkdayjobs.com",
+    "tenant": "cat",
+    "site": "CaterpillarCareers",
+    "limit": 50
+  },
+  {
+    "company": "Spirit AeroSystems",
+    "type": "sitemap_jobs",
+    "sitemaps": [
+      "https://careers.spiritaero.com/sitemap.xml"
+    ],
+    "detail_limit": 190
+  },
+  {
+    "company": "Pivotal",
+    "type": "lever",
+    "token": "pivotal"
+  },
+  {
+    "company": "Sandia National Laboratories",
+    "type": "sitemap_jobs",
+    "sitemaps": [
+      "https://sandia.jobs/sitemap.xml"
+    ],
+    "detail_limit": 140,
+    "job_url_patterns": [
+      "/job/?$"
     ]
   }
 ]
