@@ -95,7 +95,7 @@ def classify_disciplines(title, text):
 
 def greenhouse(c):
     url=f"https://boards-api.greenhouse.io/v1/boards/{c['token']}/jobs?content=true"
-    r=requests.get(url,timeout=30); r.raise_for_status()
+    r=requests.get(url,timeout=12); r.raise_for_status()
     out=[]
     for j in r.json().get('jobs',[]): 
         text=' '.join([j.get('title',''), clean(j.get('content',''))])
@@ -107,7 +107,7 @@ def greenhouse(c):
 
 def lever(c):
     url=f"https://api.lever.co/v0/postings/{c['token']}?mode=json"
-    r=requests.get(url,timeout=30); r.raise_for_status()
+    r=requests.get(url,timeout=12); r.raise_for_status()
     out=[]
     for j in r.json():
         text=' '.join([j.get('text',''), clean(j.get('descriptionPlain','')), clean(j.get('additionalPlain',''))])
@@ -129,16 +129,16 @@ def workday(c):
     out=[]; seen=set()
     searches=c.get('search_texts') or ['2027','intern','early career','entry level','new grad','engineer I']
     for query in searches:
-        offset=0; limit=int(c.get('limit',20)); max_pages=int(c.get('max_pages',5))
+        offset=0; limit=int(c.get('limit',20)); max_pages=int(c.get('max_pages',3))
         for _ in range(max_pages):
-            r=requests.post(base+'/jobs',json={'appliedFacets':{},'limit':limit,'offset':offset,'searchText':query},timeout=30)
+            r=requests.post(base+'/jobs',json={'appliedFacets':{},'limit':limit,'offset':offset,'searchText':query},timeout=12)
             r.raise_for_status(); data=r.json(); posts=data.get('jobPostings',[])
             if not posts: break
             for j in posts:
                 ext=j.get('externalPath',''); title=j.get('title','')
                 if not ext or ext in seen: continue
                 seen.add(ext)
-                try: d=requests.get(base+ext,timeout=30).json().get('jobPostingInfo',{})
+                try: d=requests.get(base+ext,timeout=12).json().get('jobPostingInfo',{})
                 except Exception: d={}
                 text=' '.join([title,clean(d.get('jobDescription','')),str(d.get('additionalLocations',''))])
                 x=_job(c['company'],f"wd:{c['tenant']}:{d.get('jobReqId') or ext}",title,text,
@@ -152,7 +152,7 @@ def sitemap_jobs(c):
     out=[]; seen=set(); headers={'User-Agent':'Mozilla/5.0 AIAA-UH-Opportunity-Finder/1.0'}
     patterns=[re.compile(p,re.I) for p in c.get('job_url_patterns',[])]
     for sm in c.get('sitemaps',[]):
-        r=requests.get(sm,headers=headers,timeout=45); r.raise_for_status()
+        r=requests.get(sm,headers=headers,timeout=15); r.raise_for_status()
         soup=BeautifulSoup(r.text,'xml')
         urls=[x.get_text(strip=True) for x in soup.find_all('loc')]
         # Follow sitemap indexes one level.
@@ -161,16 +161,16 @@ def sitemap_jobs(c):
             for u in urls[:int(c.get('max_sitemaps',20))]:
                 if not u.lower().endswith('.xml'): continue
                 try:
-                    rr=requests.get(u,headers=headers,timeout=30); rr.raise_for_status()
+                    rr=requests.get(u,headers=headers,timeout=12); rr.raise_for_status()
                     nested.extend(x.get_text(strip=True) for x in BeautifulSoup(rr.text,'xml').find_all('loc'))
                 except Exception: pass
             urls=nested
         if patterns: urls=[u for u in urls if any(p.search(u) for p in patterns)]
-        for url in urls[:int(c.get('detail_limit',160))]:
+        for url in urls[:int(c.get('detail_limit',60))]:
             if url in seen: continue
             seen.add(url)
             try:
-                rr=requests.get(url+c.get('detail_url_suffix',''),headers=headers,timeout=30); rr.raise_for_status()
+                rr=requests.get(url+c.get('detail_url_suffix',''),headers=headers,timeout=12); rr.raise_for_status()
                 page=BeautifulSoup(rr.text,'html.parser')
                 title=(page.find('h1') or page.find('title'))
                 title=clean(title.get_text(' ',strip=True) if title else '')
@@ -215,7 +215,7 @@ def careers_page(c):
     headers={'User-Agent':'Mozilla/5.0 AIAA-UH-Internship-Finder/1.0'}
     for page_url in c.get('urls',[c.get('url')]):
         if not page_url: continue
-        r=requests.get(page_url,headers=headers,timeout=30); r.raise_for_status()
+        r=requests.get(page_url,headers=headers,timeout=12); r.raise_for_status()
         soup=BeautifulSoup(r.text,'html.parser')
         seen=set()
         for a in soup.find_all('a', href=True):
