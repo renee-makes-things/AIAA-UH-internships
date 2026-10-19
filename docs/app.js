@@ -32,10 +32,8 @@ async function init(){
  ['q','stage','industry','discipline','place','when'].forEach(id=>$(id).addEventListener(id==='q'?'input':'change',render));
  document.querySelectorAll('.quick button').forEach(b=>b.addEventListener('click',()=>{if(b.dataset.place)$('place').value=b.dataset.place;if(b.dataset.stage)$('stage').value=b.dataset.stage;if(b.dataset.industry)$('industry').value=b.dataset.industry;render();}));
  try{
-   const response=await fetch('./data/roles.json?v=4',{cache:'no-store'});
-   if(!response.ok)throw new Error('HTTP '+response.status);
-   const payload=await response.json();
-   roles=Array.isArray(payload)?payload:(Array.isArray(payload.roles)?payload.roles:[]);
+   roles=Array.isArray(window.AIAA_ROLES)?window.AIAA_ROLES:[];
+   if(!roles.length) throw new Error('Bundled role data is empty');
    $('active').textContent=roles.length;
    $('newweek').textContent=roles.filter(r=>ageDays(r.first_seen)<=7).length;
    $('companies').textContent=new Set(roles.map(r=>r.company).filter(Boolean)).size;
