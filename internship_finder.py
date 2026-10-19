@@ -216,7 +216,10 @@ def export_roles_json(rows):
             'apply_url':r.get('url','')
         })
     path=ROOT/'data'/'roles.json'; path.parent.mkdir(exist_ok=True)
-    path.write_text(json.dumps({'updated_at':TODAY,'roles':live},indent=2),encoding='utf-8')
+    payload=json.dumps({'updated_at':TODAY,'roles':live},indent=2)
+    path.write_text(payload,encoding='utf-8')
+    pages=ROOT/'docs'/'data'/'roles.json'; pages.parent.mkdir(parents=True,exist_ok=True)
+    pages.write_text(payload,encoding='utf-8')
 
 def style_sheet(ws):
     fill=PatternFill('solid',fgColor='16324F')
