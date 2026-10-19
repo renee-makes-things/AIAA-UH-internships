@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 jobs:
-  scan-opportunitys:
+  scan-opportunities:
     runs-on: ubuntu-latest
 
     steps:
@@ -29,7 +29,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run opportunity finder
-        run: python opportunity_finder.py
+        run: python internship_finder.py
 
       - name: Save updated opportunity data
         run: |
@@ -48,9 +48,9 @@ jobs:
       - name: Upload latest opportunity tracker
         uses: actions/upload-artifact@v4
         with:
-          name: AIAA-UH-Summer-2027-Opportunitys
+          name: AIAA-UH-Aerospace-Opportunities
           path: |
-            AIAA_UH_Summer_2027_Opportunitys.xlsx
+            AIAA_UH_Summer_2027_Internships.xlsx
             data/jobs.csv
             data/roles.json
           if-no-files-found: warn
