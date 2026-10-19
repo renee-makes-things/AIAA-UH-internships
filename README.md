@@ -37,6 +37,16 @@ The tracker covers opportunities across these AIAA UH interest areas:
 
 Relevant disciplines include aerospace, mechanical, electrical/electronics, computer, embedded, software, systems, GNC/controls, manufacturing/industrial, materials, test/integration, propulsion, structures, quality/reliability, and other technical engineering roles.
 
+## 🌐 Website
+
+This repository also contains a student-facing searchable board in `docs/`, designed for GitHub Pages. The website and README are intended to use the same normalized `data/roles.json` feed so there is only one source of truth.
+
+The website supports search plus filters for career stage, industry, engineering discipline, location, and posting recency, with quick filters for Houston, Texas, new-grad, spaceflight, and aviation roles.
+
+### Shared role schema
+
+Each normalized role in `data/roles.json` uses fields such as `company`, `title`, `location`, `stage`, `industry`, `disciplines`, `posted_at`, `first_seen`, and `apply_url`. The scanner will generate this file; the front end should not maintain a separate hand-edited job list.
+
 ## Automation
 
 The current scanner runs automatically and safely preserves previously known roles when an employer source is blocked or cannot be verified.
