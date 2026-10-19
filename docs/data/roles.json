@@ -1,0 +1,3166 @@
+{
+  "updated_at": "2026-10-19",
+  "roles": [
+    {
+      "id": "gh:spacex:8621771002",
+      "company": "SpaceX",
+      "title": "Summer 2027 Business Operations Internship/Co-op",
+      "location": "Flexible - Any SpaceX Site",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/spacex/jobs/8621771002?gh_jid=8621771002"
+    },
+    {
+      "id": "gh:spacex:8636144002",
+      "company": "SpaceX",
+      "title": "Summer 2027 Civil Engineering Internship",
+      "location": "Flexible - Any SpaceX Site",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Structures"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/spacex/jobs/8636144002?gh_jid=8636144002"
+    },
+    {
+      "id": "gh:spacex:8621740002",
+      "company": "SpaceX",
+      "title": "Summer 2027 Engineering Internship/Co-op",
+      "location": "Flexible - Any SpaceX Site",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/spacex/jobs/8621740002?gh_jid=8621740002"
+    },
+    {
+      "id": "gh:spacex:8621753002",
+      "company": "SpaceX",
+      "title": "Summer 2027 Graduate Engineer Internship/Co-op",
+      "location": "Flexible - Any SpaceX Site",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/spacex/jobs/8621753002?gh_jid=8621753002"
+    },
+    {
+      "id": "gh:spacex:8621763002",
+      "company": "SpaceX",
+      "title": "Summer 2027 Silicon Engineering Internship/Co-op",
+      "location": "Flexible - Any SpaceX Site",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/spacex/jobs/8621763002?gh_jid=8621763002"
+    },
+    {
+      "id": "gh:spacex:8621757002",
+      "company": "SpaceX",
+      "title": "Summer 2027 Software Engineering Internship/Co-op",
+      "location": "Flexible - Any SpaceX Site",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/spacex/jobs/8621757002?gh_jid=8621757002"
+    },
+    {
+      "id": "gh:astranis:4704301006",
+      "company": "Astranis",
+      "title": "Antenna Associate (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "New Grad / Early Career",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4704301006"
+    },
+    {
+      "id": "gh:astranis:4704274006",
+      "company": "Astranis",
+      "title": "Antenna Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4704274006"
+    },
+    {
+      "id": "gh:astranis:4704761006",
+      "company": "Astranis",
+      "title": "Assembly, Integration, and Test Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Systems",
+        "Test / Integration"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4704761006"
+    },
+    {
+      "id": "gh:astranis:4718206006",
+      "company": "Astranis",
+      "title": "Automation & Controls Engineering Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "GNC / Controls"
+      ],
+      "posted_at": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4718206006"
+    },
+    {
+      "id": "gh:astranis:4680324006",
+      "company": "Astranis",
+      "title": "Avionics Associate Engineer (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "New Grad / Early Career",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4680324006"
+    },
+    {
+      "id": "gh:astranis:4706024006",
+      "company": "Astranis",
+      "title": "Avionics Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4706024006"
+    },
+    {
+      "id": "gh:astranis:4704755006",
+      "company": "Astranis",
+      "title": "CAD Engineer Associate (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "New Grad / Early Career",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4704755006"
+    },
+    {
+      "id": "gh:astranis:4704742006",
+      "company": "Astranis",
+      "title": "CAD Engineer Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4704742006"
+    },
+    {
+      "id": "gh:astranis:4715793006",
+      "company": "Astranis",
+      "title": "Electrical Integration Associate - RF (Summer 2027)",
+      "location": "San Francisco, CA",
+      "stage": "New Grad / Early Career",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Electrical / Electronics",
+        "Systems",
+        "Test / Integration"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4715793006"
+    },
+    {
+      "id": "gh:astranis:4715788006",
+      "company": "Astranis",
+      "title": "Electrical Integration Intern - RF (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Electrical / Electronics",
+        "Systems",
+        "Test / Integration"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4715788006"
+    },
+    {
+      "id": "gh:astranis:4704793006",
+      "company": "Astranis",
+      "title": "Electrical Reliability Associate (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "New Grad / Early Career",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Electrical / Electronics",
+        "Quality / Reliability"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4704793006"
+    },
+    {
+      "id": "gh:astranis:4704784006",
+      "company": "Astranis",
+      "title": "Electrical Reliability Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Electrical / Electronics",
+        "Quality / Reliability"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4704784006"
+    },
+    {
+      "id": "gh:astranis:4704716006",
+      "company": "Astranis",
+      "title": "Flight Software Associate (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "New Grad / Early Career",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4704716006"
+    },
+    {
+      "id": "gh:astranis:4704598006",
+      "company": "Astranis",
+      "title": "Flight Software Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4704598006"
+    },
+    {
+      "id": "gh:astranis:4704813006",
+      "company": "Astranis",
+      "title": "FPGA Associate (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "New Grad / Early Career",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4704813006"
+    },
+    {
+      "id": "gh:astranis:4704805006",
+      "company": "Astranis",
+      "title": "FPGA Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4704805006"
+    },
+    {
+      "id": "gh:astranis:4704765006",
+      "company": "Astranis",
+      "title": "Guidance, Navigation, and Control Associate (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "New Grad / Early Career",
+      "industry": "Space Systems",
+      "disciplines": [
+        "GNC / Controls"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4704765006"
+    },
+    {
+      "id": "gh:astranis:4705172006",
+      "company": "Astranis",
+      "title": "Guidance, Navigation, and Control Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "GNC / Controls"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4705172006"
+    },
+    {
+      "id": "gh:astranis:4704779006",
+      "company": "Astranis",
+      "title": "Harness Design Engineer Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4704779006"
+    },
+    {
+      "id": "gh:astranis:4705260006",
+      "company": "Astranis",
+      "title": "Harness Manufacturing Associate (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "New Grad / Early Career",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Manufacturing / Industrial"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4705260006"
+    },
+    {
+      "id": "gh:astranis:4705255006",
+      "company": "Astranis",
+      "title": "Harness Manufacturing Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Manufacturing / Industrial"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4705255006"
+    },
+    {
+      "id": "gh:astranis:4704620006",
+      "company": "Astranis",
+      "title": "Mechanical Associate Engineer (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "New Grad / Early Career",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Mechanical"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4704620006"
+    },
+    {
+      "id": "gh:astranis:4704601006",
+      "company": "Astranis",
+      "title": "Mechanical Engineer Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Mechanical"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4704601006"
+    },
+    {
+      "id": "gh:astranis:4706425006",
+      "company": "Astranis",
+      "title": "Power Electronics Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4706425006"
+    },
+    {
+      "id": "gh:astranis:4705675006",
+      "company": "Astranis",
+      "title": "Production Quality Intern (Summer 2027)",
+      "location": "San Francisco ",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Manufacturing / Industrial",
+        "Quality / Reliability"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4705675006"
+    },
+    {
+      "id": "gh:astranis:4713184006",
+      "company": "Astranis",
+      "title": "Propulsion Engineer Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Propulsion"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4713184006"
+    },
+    {
+      "id": "gh:astranis:4705648006",
+      "company": "Astranis",
+      "title": "Propulsion Manufacturing Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Manufacturing / Industrial",
+        "Propulsion"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4705648006"
+    },
+    {
+      "id": "gh:astranis:4705640006",
+      "company": "Astranis",
+      "title": "Propulsion Test Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Test / Integration",
+        "Propulsion"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4705640006"
+    },
+    {
+      "id": "gh:astranis:4707945006",
+      "company": "Astranis",
+      "title": "RF Hardware Associate (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "New Grad / Early Career",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4707945006"
+    },
+    {
+      "id": "gh:astranis:4708436006",
+      "company": "Astranis",
+      "title": "RF Hardware Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4708436006"
+    },
+    {
+      "id": "gh:astranis:4716826006",
+      "company": "Astranis",
+      "title": "RF Validation Associate (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "New Grad / Early Career",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Electrical / Electronics",
+        "Test / Integration"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4716826006"
+    },
+    {
+      "id": "gh:astranis:4716499006",
+      "company": "Astranis",
+      "title": "RF Validation Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Electrical / Electronics",
+        "Test / Integration"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4716499006"
+    },
+    {
+      "id": "gh:astranis:4715983006",
+      "company": "Astranis",
+      "title": "Software Defined Radio Hardware Associate (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "New Grad / Early Career",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4715983006"
+    },
+    {
+      "id": "gh:astranis:4716088006",
+      "company": "Astranis",
+      "title": "Software Defined Radio Hardware Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4716088006"
+    },
+    {
+      "id": "gh:astranis:4705615006",
+      "company": "Astranis",
+      "title": "Software Developer, Network Software Associate (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "New Grad / Early Career",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4705615006"
+    },
+    {
+      "id": "gh:astranis:4705597006",
+      "company": "Astranis",
+      "title": "Software Developer, Network Software Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4705597006"
+    },
+    {
+      "id": "gh:astranis:4705214006",
+      "company": "Astranis",
+      "title": "Software Engineer Backend Intern (Summer 2027)",
+      "location": "San Francisco, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4705214006"
+    },
+    {
+      "id": "gh:astranis:4705610006",
+      "company": "Astranis",
+      "title": "Software Engineer - Enterprise Systems Intern (Summer 2027)",
+      "location": "San Francisco, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Software",
+        "Systems"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4705610006"
+    },
+    {
+      "id": "gh:astranis:4708369006",
+      "company": "Astranis",
+      "title": "Technical Project Management Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4708369006"
+    },
+    {
+      "id": "gh:astranis:4704831006",
+      "company": "Astranis",
+      "title": "Thermal Associate Engineer (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "New Grad / Early Career",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Mechanical"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4704831006"
+    },
+    {
+      "id": "gh:astranis:4704820006",
+      "company": "Astranis",
+      "title": "Thermal Intern (Summer 2027)",
+      "location": "San Francisco",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Mechanical"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/astranis/jobs/4704820006"
+    },
+    {
+      "id": "gh:andurilindustries:5148101007",
+      "company": "Anduril",
+      "title": "2027 Electrical Engineer Intern",
+      "location": "Atlanta, Georgia, United States; Boston, Massachusetts, United States; Broomfield, Colorado, United States; Colorado Springs, Colorado, United States; Costa Mesa, California, United States; Fort Collins, Colorado, United States; Irvine, California, United States; Reston, Virginia, United States; Seattle, Washington, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5148101007?gh_jid=5148101007"
+    },
+    {
+      "id": "gh:andurilindustries:5268689007",
+      "company": "Anduril",
+      "title": "2027 Field Test Engineer Intern",
+      "location": "Costa Mesa, California, United States; Quincy, Massachusetts, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Test / Integration"
+      ],
+      "posted_at": "2026-10-19",
+      "first_seen": "2026-10-19",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5268689007?gh_jid=5268689007"
+    },
+    {
+      "id": "gh:andurilindustries:5265158007",
+      "company": "Anduril",
+      "title": "2027 Firmware Engineer Intern",
+      "location": "Costa Mesa, California, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Computer / Embedded"
+      ],
+      "posted_at": "2026-10-14",
+      "first_seen": "2026-10-14",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5265158007?gh_jid=5265158007"
+    },
+    {
+      "id": "gh:andurilindustries:5239083007",
+      "company": "Anduril",
+      "title": "2027 Flight Software Engineer Intern",
+      "location": "Costa Mesa, California, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5239083007?gh_jid=5239083007"
+    },
+    {
+      "id": "gh:andurilindustries:5257709007",
+      "company": "Anduril",
+      "title": "2027 Flight Test Engineer Intern",
+      "location": "Costa Mesa, California, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Test / Integration"
+      ],
+      "posted_at": "2026-10-14",
+      "first_seen": "2026-10-14",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5257709007?gh_jid=5257709007"
+    },
+    {
+      "id": "gh:andurilindustries:5268736007",
+      "company": "Anduril",
+      "title": "2027 Guidance, Navigation, & Control Engineer Intern",
+      "location": "Costa Mesa, California, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "GNC / Controls"
+      ],
+      "posted_at": "2026-10-19",
+      "first_seen": "2026-10-19",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5268736007?gh_jid=5268736007"
+    },
+    {
+      "id": "gh:andurilindustries:5255593007",
+      "company": "Anduril",
+      "title": "2027 Industrial Engineer Intern",
+      "location": "Ashville, Ohio, United States; Costa Mesa, California, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Manufacturing / Industrial"
+      ],
+      "posted_at": "2026-10-02",
+      "first_seen": "2026-10-02",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5255593007?gh_jid=5255593007"
+    },
+    {
+      "id": "gh:andurilindustries:5153218007",
+      "company": "Anduril",
+      "title": "2027 Manufacturing Engineer Intern",
+      "location": "Atlanta, Georgia, United States; Boston, Massachusetts, United States; Broomfield, Colorado, United States; Colorado Springs, Colorado, United States; Costa Mesa, California, United States; Fort Collins, Colorado, United States; Irvine, California, United States; Seattle, Washington, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Manufacturing / Industrial"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5153218007?gh_jid=5153218007"
+    },
+    {
+      "id": "gh:andurilindustries:5153187007",
+      "company": "Anduril",
+      "title": "2027 Mechanical Engineer Intern",
+      "location": "Atlanta, Georgia, United States; Boston, Massachusetts, United States; Broomfield, Colorado, United States; Colorado Springs, Colorado, United States; Costa Mesa, California, United States; Fort Collins, Colorado, United States; Irvine, California, United States; Reston, Virginia, United States; Seattle, Washington, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Mechanical"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5153187007?gh_jid=5153187007"
+    },
+    {
+      "id": "gh:andurilindustries:5265097007",
+      "company": "Anduril",
+      "title": "2027 Product Designer Intern",
+      "location": "Costa Mesa, California, United States",
+      "stage": "Internship",
+      "industry": "Defense & High-Speed Flight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-10-14",
+      "first_seen": "2026-10-14",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5265097007?gh_jid=5265097007"
+    },
+    {
+      "id": "gh:andurilindustries:5257674007",
+      "company": "Anduril",
+      "title": "2027 Quality & Test Engineer Intern",
+      "location": "Ashville, Ohio, United States; Costa Mesa, California, United States; Irvine, California, United States; Quonset, Rhode Island, United States; Santa Ana, California, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Test / Integration",
+        "Quality / Reliability"
+      ],
+      "posted_at": "2026-10-06",
+      "first_seen": "2026-10-06",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5257674007?gh_jid=5257674007"
+    },
+    {
+      "id": "gh:andurilindustries:5257682007",
+      "company": "Anduril",
+      "title": "2027 Reliability Engineer Intern",
+      "location": "Costa Mesa, California, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Quality / Reliability"
+      ],
+      "posted_at": "2026-10-06",
+      "first_seen": "2026-10-06",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5257682007?gh_jid=5257682007"
+    },
+    {
+      "id": "gh:andurilindustries:5148079007",
+      "company": "Anduril",
+      "title": "2027 Software Engineer Intern",
+      "location": "Atlanta, Georgia, United States; Boston, Massachusetts, United States; Broomfield, Colorado, United States; Colorado Springs, Colorado, United States; Costa Mesa, California, United States; Fort Collins, Colorado, United States; Irvine, California, United States; Reston, Virginia, United States; Seattle, Washington, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5148079007?gh_jid=5148079007"
+    },
+    {
+      "id": "gh:andurilindustries:5255827007",
+      "company": "Anduril",
+      "title": "2027 Supply Chain Intern",
+      "location": "Costa Mesa, California, United States; Fort Collins, Colorado, United States; Quincy, Massachusetts, United States; Santa Ana, California, United States; Waltham, Massachusetts, United States",
+      "stage": "Internship",
+      "industry": "Defense & High-Speed Flight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-10-03",
+      "first_seen": "2026-10-03",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5255827007?gh_jid=5255827007"
+    },
+    {
+      "id": "gh:andurilindustries:5257690007",
+      "company": "Anduril",
+      "title": "2027 Systems Engineer Intern",
+      "location": "Boston, Massachusetts, United States; Costa Mesa, California, United States; Fort Collins, Colorado, United States; Reston, Virginia, United States; Seattle, Washington, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Systems"
+      ],
+      "posted_at": "2026-10-06",
+      "first_seen": "2026-10-06",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5257690007?gh_jid=5257690007"
+    },
+    {
+      "id": "gh:andurilindustries:5236589007",
+      "company": "Anduril",
+      "title": "Winter 2027 Manufacturing Engineer Co-op",
+      "location": "Ashville, Ohio, United States; Lexington, Massachusetts, United States; Quincy, Massachusetts, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Manufacturing / Industrial"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5236589007?gh_jid=5236589007"
+    },
+    {
+      "id": "gh:stokespacetechnologies:6175828004",
+      "company": "Stoke Space",
+      "title": "Summer 2027 Internship - Engineering",
+      "location": "Cape Canaveral, Florida; Kent, Washington; Moses Lake, Washington",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/stokespacetechnologies/jobs/6175828004"
+    },
+    {
+      "id": "gh:stokespacetechnologies:6176785004",
+      "company": "Stoke Space",
+      "title": "Summer 2027 Internship - Operations",
+      "location": "Kent, Washington",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/stokespacetechnologies/jobs/6176785004"
+    },
+    {
+      "id": "gh:stokespacetechnologies:6176786004",
+      "company": "Stoke Space",
+      "title": "Summer 2027 Internship - Software",
+      "location": "Kent, Washington",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/stokespacetechnologies/jobs/6176786004"
+    },
+    {
+      "id": "gh:k2spacecorporation:5411921008",
+      "company": "K2 Space",
+      "title": "Avionics Systems/Test Engineering Intern – Summer 2027",
+      "location": "Los Angeles, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Systems",
+        "Test / Integration"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/k2spacecorporation/jobs/5411921008"
+    },
+    {
+      "id": "gh:k2spacecorporation:5411916008",
+      "company": "K2 Space",
+      "title": "Dynamics Engineering Intern – Summer 2027",
+      "location": "Los Angeles, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/k2spacecorporation/jobs/5411916008"
+    },
+    {
+      "id": "gh:k2spacecorporation:5411918008",
+      "company": "K2 Space",
+      "title": "Electrical Engineering Intern – Summer 2027",
+      "location": "Los Angeles, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/k2spacecorporation/jobs/5411918008"
+    },
+    {
+      "id": "gh:k2spacecorporation:5411917008",
+      "company": "K2 Space",
+      "title": "GNC Engineering Intern – Summer 2027",
+      "location": "Los Angeles, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "GNC / Controls"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/k2spacecorporation/jobs/5411917008"
+    },
+    {
+      "id": "gh:k2spacecorporation:5411915008",
+      "company": "K2 Space",
+      "title": "Mechanical  Engineering Intern – Summer 2027",
+      "location": "Los Angeles, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Mechanical"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/k2spacecorporation/jobs/5411915008"
+    },
+    {
+      "id": "gh:k2spacecorporation:5447206008",
+      "company": "K2 Space",
+      "title": "Platform Engineering Intern – Summer 2027 ",
+      "location": "Los Angeles",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-10-08",
+      "first_seen": "2026-10-08",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/k2spacecorporation/jobs/5447206008"
+    },
+    {
+      "id": "gh:k2spacecorporation:5411919008",
+      "company": "K2 Space",
+      "title": "RF Engineering Intern – Summer 2027",
+      "location": "Los Angeles, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/k2spacecorporation/jobs/5411919008"
+    },
+    {
+      "id": "gh:k2spacecorporation:5418727008",
+      "company": "K2 Space",
+      "title": "Simulation Software Engineering Intern - Summer 2027",
+      "location": "Los Angeles, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/k2spacecorporation/jobs/5418727008"
+    },
+    {
+      "id": "gh:k2spacecorporation:5411920008",
+      "company": "K2 Space",
+      "title": "Software Engineering Intern – Summer 2027",
+      "location": "Los Angeles, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/k2spacecorporation/jobs/5411920008"
+    },
+    {
+      "id": "gh:k2spacecorporation:5447292008",
+      "company": "K2 Space",
+      "title": "Space Operations Engineering Intern – Summer 2027 ",
+      "location": "Los Angeles",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-10-08",
+      "first_seen": "2026-10-08",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/k2spacecorporation/jobs/5447292008"
+    },
+    {
+      "id": "gh:k2spacecorporation:5436468008",
+      "company": "K2 Space",
+      "title": "Supply Chain Internship - Summer 2027",
+      "location": "Los Angeles",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-29",
+      "first_seen": "2026-09-29",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/k2spacecorporation/jobs/5436468008"
+    },
+    {
+      "id": "gh:k2spacecorporation:5411914008",
+      "company": "K2 Space",
+      "title": "Vehicle Operations Engineering Intern – Summer 2027",
+      "location": "Los Angeles, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/k2spacecorporation/jobs/5411914008"
+    },
+    {
+      "id": "lever:shieldai:c41c41a2-83d8-41a0-8a3b-ff8b84dc1c8a",
+      "company": "Shield AI",
+      "title": "Summer 2027 - Advanced Manufacturing Engineering Intern",
+      "location": "Dallas, Texas",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Manufacturing / Industrial"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/shieldai/c41c41a2-83d8-41a0-8a3b-ff8b84dc1c8a"
+    },
+    {
+      "id": "lever:shieldai:8c6cfcee-c6da-4a73-9bdf-3ef098ff59e6",
+      "company": "Shield AI",
+      "title": "Summer 2027 - Electrical Engineering Co-op (June 2027)",
+      "location": "Dallas, Texas",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/shieldai/8c6cfcee-c6da-4a73-9bdf-3ef098ff59e6"
+    },
+    {
+      "id": "lever:shieldai:200a293f-71ce-4982-a100-ac4b500c4cf7",
+      "company": "Shield AI",
+      "title": "Summer 2027 - Electrical Engineering Intern",
+      "location": "Dallas, Texas",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/shieldai/200a293f-71ce-4982-a100-ac4b500c4cf7"
+    },
+    {
+      "id": "lever:shieldai:da54c482-fe62-4f60-98b1-55ac0b82b3bc",
+      "company": "Shield AI",
+      "title": "Summer 2027 - Mechanical Engineering Intern",
+      "location": "Seattle, Washington",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Mechanical"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/shieldai/da54c482-fe62-4f60-98b1-55ac0b82b3bc"
+    },
+    {
+      "id": "lever:shieldai:8c850c75-081d-4d09-bebf-096379a93010",
+      "company": "Shield AI",
+      "title": "Summer 2027 - Software Engineer Intern",
+      "location": "San Diego, California",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/shieldai/8c850c75-081d-4d09-bebf-096379a93010"
+    },
+    {
+      "id": "lever:hermeus:b7babdb5-64ee-49ad-a193-918d6a31c462",
+      "company": "Hermeus",
+      "title": "Avionics Electrical Engineering Intern - Spring/Summer 2027",
+      "location": "Atlanta, GA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/hermeus/b7babdb5-64ee-49ad-a193-918d6a31c462"
+    },
+    {
+      "id": "lever:hermeus:ee3a4109-b6e7-4ed5-8981-a483b3936e5a",
+      "company": "Hermeus",
+      "title": "Build Reliability Engineering Intern - Spring/Summer 2027",
+      "location": "Atlanta, GA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Quality / Reliability"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/hermeus/ee3a4109-b6e7-4ed5-8981-a483b3936e5a"
+    },
+    {
+      "id": "lever:hermeus:78008094-ca81-4a0c-9a18-93b30f932acd",
+      "company": "Hermeus",
+      "title": "Flight Software Engineering Intern (Simulation/Hardware-In-The-Loop) - Spring & Summer 2027",
+      "location": "Los Angeles, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Software"
+      ],
+      "posted_at": "2026-09-29",
+      "first_seen": "2026-09-29",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/hermeus/78008094-ca81-4a0c-9a18-93b30f932acd"
+    },
+    {
+      "id": "lever:hermeus:555263f6-c5ec-4489-ab07-1aea546b70e7",
+      "company": "Hermeus",
+      "title": "GNC & Flight Software Intern - Spring/Summer 2027",
+      "location": "Atlanta, GA",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Software",
+        "GNC / Controls"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/hermeus/555263f6-c5ec-4489-ab07-1aea546b70e7"
+    },
+    {
+      "id": "lever:hermeus:29c10a11-aa02-4d64-83d0-00001cbd3ac0",
+      "company": "Hermeus",
+      "title": "Loads & Dynamics Engineering Intern - Summer 2027",
+      "location": "Los Angeles, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Structures"
+      ],
+      "posted_at": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/hermeus/29c10a11-aa02-4d64-83d0-00001cbd3ac0"
+    },
+    {
+      "id": "lever:hermeus:1bdf3754-5649-4a50-913e-b05140cb004f",
+      "company": "Hermeus",
+      "title": "Manufacturing Engineering Intern - Spring/Summer 2027",
+      "location": "Atlanta, GA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Manufacturing / Industrial"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/hermeus/1bdf3754-5649-4a50-913e-b05140cb004f"
+    },
+    {
+      "id": "lever:hermeus:1bc5c858-1b04-4093-80a0-2ba3491afc60",
+      "company": "Hermeus",
+      "title": "Mechanical Engineering Intern  - Spring/Summer 2027",
+      "location": "Los Angeles, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Mechanical"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/hermeus/1bc5c858-1b04-4093-80a0-2ba3491afc60"
+    },
+    {
+      "id": "lever:hermeus:9229aa88-f54d-4ecd-85ee-b31f53b4207d",
+      "company": "Hermeus",
+      "title": "Mission Systems Engineering Intern - Spring/Summer 2027",
+      "location": "Atlanta, GA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Systems"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/hermeus/9229aa88-f54d-4ecd-85ee-b31f53b4207d"
+    },
+    {
+      "id": "lever:hermeus:2cbb75f7-a040-47b2-a442-d9cc1faedb11",
+      "company": "Hermeus",
+      "title": "Propulsion Component Engineering Intern - Spring/Summer 2027",
+      "location": "Los Angeles, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Propulsion"
+      ],
+      "posted_at": "2026-10-19",
+      "first_seen": "2026-10-19",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/hermeus/2cbb75f7-a040-47b2-a442-d9cc1faedb11"
+    },
+    {
+      "id": "lever:hermeus:5b08e2df-c9db-4831-aece-67d89e744796",
+      "company": "Hermeus",
+      "title": "Software Engineering Intern (Command & Control) - Spring/Summer 2027",
+      "location": "Atlanta, GA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Software",
+        "GNC / Controls"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/hermeus/5b08e2df-c9db-4831-aece-67d89e744796"
+    },
+    {
+      "id": "lever:hermeus:d87ed913-affc-475e-b721-c5b5f11c3c7b",
+      "company": "Hermeus",
+      "title": "Software Engineering Intern (HIL) - Spring/Summer 2027",
+      "location": "Atlanta, GA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/hermeus/d87ed913-affc-475e-b721-c5b5f11c3c7b"
+    },
+    {
+      "id": "lever:hermeus:445db430-6f81-41cf-847a-56a947afb936",
+      "company": "Hermeus",
+      "title": "Software Engineering Intern (Modeling & Simulation) - Spring/Summer 2027",
+      "location": "Los Angeles, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/hermeus/445db430-6f81-41cf-847a-56a947afb936"
+    },
+    {
+      "id": "lever:hermeus:60b5d40a-1065-4bd2-8c72-6b2fb69d4761",
+      "company": "Hermeus",
+      "title": "Structures/Mechanical Engineering Intern - Spring/Summer 2027",
+      "location": "Atlanta, GA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Mechanical",
+        "Structures"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/hermeus/60b5d40a-1065-4bd2-8c72-6b2fb69d4761"
+    },
+    {
+      "id": "lever:hermeus:643fd7b7-9015-43a1-aa2b-a54f117b403c",
+      "company": "Hermeus",
+      "title": "Subsystem Test Engineering Intern - Spring/Summer 2027",
+      "location": "Atlanta, GA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Systems",
+        "Test / Integration"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/hermeus/643fd7b7-9015-43a1-aa2b-a54f117b403c"
+    },
+    {
+      "id": "lever:hermeus:17a0b249-c6c4-4361-ab9c-1aa7c4472591",
+      "company": "Hermeus",
+      "title": "Supply Chain Intern - Spring/Summer 2027",
+      "location": "Atlanta, GA",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/hermeus/17a0b249-c6c4-4361-ab9c-1aa7c4472591"
+    },
+    {
+      "id": "lever:hermeus:d40446ee-40a9-4bb0-a3a8-a4a189b74630",
+      "company": "Hermeus",
+      "title": "Test and Operations Engineering Intern - Spring/Summer 2027",
+      "location": "Los Angeles, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Test / Integration"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/hermeus/d40446ee-40a9-4bb0-a3a8-a4a189b74630"
+    },
+    {
+      "id": "lever:CesiumAstro:6a953cbc-af69-452c-b357-1a0a3db80bbf",
+      "company": "CesiumAstro",
+      "title": "Summer 2027 - Electrical Engineering Internship, Hardware",
+      "location": "Austin, TX",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/CesiumAstro/6a953cbc-af69-452c-b357-1a0a3db80bbf"
+    },
+    {
+      "id": "lever:CesiumAstro:ccb0f99f-0cc7-4517-8d1c-faeca53b5e5c",
+      "company": "CesiumAstro",
+      "title": "Summer 2027 - Electrical Engineering Internship, Hardware",
+      "location": "Westminster, CO",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/CesiumAstro/ccb0f99f-0cc7-4517-8d1c-faeca53b5e5c"
+    },
+    {
+      "id": "lever:CesiumAstro:8eb71502-4374-45aa-82fa-2b62a42cd8e9",
+      "company": "CesiumAstro",
+      "title": "Summer 2027 - Electrical Engineering Internship, RF",
+      "location": "Westminster, CO",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/CesiumAstro/8eb71502-4374-45aa-82fa-2b62a42cd8e9"
+    },
+    {
+      "id": "lever:CesiumAstro:e835c385-69b0-4faf-a82f-17bf61260286",
+      "company": "CesiumAstro",
+      "title": "Summer 2027 - Electrical Engineering Internship, RF",
+      "location": "Austin, TX",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/CesiumAstro/e835c385-69b0-4faf-a82f-17bf61260286"
+    },
+    {
+      "id": "lever:CesiumAstro:96e97f22-a5b2-4e95-af84-b4f765343663",
+      "company": "CesiumAstro",
+      "title": "Summer 2027 - Embedded Software Engineering Internship",
+      "location": "Westminster, CO",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Computer / Embedded",
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/CesiumAstro/96e97f22-a5b2-4e95-af84-b4f765343663"
+    },
+    {
+      "id": "lever:CesiumAstro:d25bf640-2b2b-48d6-ab79-8a06b246caaa",
+      "company": "CesiumAstro",
+      "title": "Summer 2027 - Embedded Software Engineering Internship",
+      "location": "Austin, TX",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Computer / Embedded",
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/CesiumAstro/d25bf640-2b2b-48d6-ab79-8a06b246caaa"
+    },
+    {
+      "id": "lever:CesiumAstro:e0525e31-2d45-441e-bf3e-36be4b67d8ef",
+      "company": "CesiumAstro",
+      "title": "Summer 2027 - Finance Internship",
+      "location": "Austin, TX",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/CesiumAstro/e0525e31-2d45-441e-bf3e-36be4b67d8ef"
+    },
+    {
+      "id": "lever:CesiumAstro:385a6217-7931-4bb4-861a-1e5651e3a998",
+      "company": "CesiumAstro",
+      "title": "Summer 2027 - Flight Dynamics Internship",
+      "location": "Huntsville, AL",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-10-17",
+      "first_seen": "2026-10-17",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/CesiumAstro/385a6217-7931-4bb4-861a-1e5651e3a998"
+    },
+    {
+      "id": "lever:CesiumAstro:e18ce6a5-32ed-468e-a39e-28de9eb16872",
+      "company": "CesiumAstro",
+      "title": "Summer 2027 - GNC Internship",
+      "location": "Westminster, CO",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "GNC / Controls"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/CesiumAstro/e18ce6a5-32ed-468e-a39e-28de9eb16872"
+    },
+    {
+      "id": "lever:CesiumAstro:79d56d02-19bb-42fa-a7c6-ae19659120d6",
+      "company": "CesiumAstro",
+      "title": "Summer 2027 - Manufacturing Internship",
+      "location": "Austin, TX",
+      "stage": "Internship",
+      "industry": "Manufacturing & Suppliers",
+      "disciplines": [
+        "Manufacturing / Industrial"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/CesiumAstro/79d56d02-19bb-42fa-a7c6-ae19659120d6"
+    },
+    {
+      "id": "lever:CesiumAstro:042f3a1d-5fc1-44ef-8f12-57044eaa4db2",
+      "company": "CesiumAstro",
+      "title": "Summer 2027 - Mechanical Engineering Internship",
+      "location": "Austin, TX",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Mechanical"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/CesiumAstro/042f3a1d-5fc1-44ef-8f12-57044eaa4db2"
+    },
+    {
+      "id": "lever:CesiumAstro:c7217acc-8eb4-4431-9e90-f426ccca8d1f",
+      "company": "CesiumAstro",
+      "title": "Summer 2027 - Mechanical Engineering Internship",
+      "location": "Westminster, CO",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Mechanical"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/CesiumAstro/c7217acc-8eb4-4431-9e90-f426ccca8d1f"
+    },
+    {
+      "id": "lever:CesiumAstro:6c354949-9e6b-4716-9381-f8aa071e3465",
+      "company": "CesiumAstro",
+      "title": "Summer 2027 - Supply Chain Internship",
+      "location": "Westminster, CO",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/CesiumAstro/6c354949-9e6b-4716-9381-f8aa071e3465"
+    },
+    {
+      "id": "lever:CesiumAstro:a3b0f097-9d62-4a67-9800-de5dfe416da2",
+      "company": "CesiumAstro",
+      "title": "Summer 2027 - Systems Engineering Internship",
+      "location": "Westminster, CO",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Systems"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/CesiumAstro/a3b0f097-9d62-4a67-9800-de5dfe416da2"
+    },
+    {
+      "id": "lever:CesiumAstro:ecb287e0-376b-49fd-baef-fe08c0c0234c",
+      "company": "CesiumAstro",
+      "title": "Summer 2027 - Systems Engineering Internship",
+      "location": "El Segundo, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Systems"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/CesiumAstro/ecb287e0-376b-49fd-baef-fe08c0c0234c"
+    },
+    {
+      "id": "lever:CesiumAstro:9d308f2f-7a8a-4f04-b24e-bc6353875cfa",
+      "company": "CesiumAstro",
+      "title": "Summer 2027 – Power Electronics Internship",
+      "location": "El Segundo, CA",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-10-03",
+      "first_seen": "2026-10-03",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/CesiumAstro/9d308f2f-7a8a-4f04-b24e-bc6353875cfa"
+    },
+    {
+      "id": "lever:CesiumAstro:ab7dd1c4-7196-4cae-8fbd-cddec993b9b8",
+      "company": "CesiumAstro",
+      "title": "Summer 2027 – Test Engineering Internship",
+      "location": "Westminster, CO",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Test / Integration"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/CesiumAstro/ab7dd1c4-7196-4cae-8fbd-cddec993b9b8"
+    },
+    {
+      "id": "lever:espace:296ec3b9-550d-440a-a2c4-1e8fc6dd648b",
+      "company": "E-Space",
+      "title": "E-Space 2027 Summer Internship, Arlington TX",
+      "location": "Arlington, TX",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.lever.co/espace/296ec3b9-550d-440a-a2c4-1e8fc6dd648b"
+    },
+    {
+      "id": "gh:rocketlab:7984600003",
+      "company": "Rocket Lab",
+      "title": "Additive Manufacturing Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Manufacturing / Industrial"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7984600003"
+    },
+    {
+      "id": "gh:rocketlab:7989733003",
+      "company": "Rocket Lab",
+      "title": "Avionics Engineering Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7989733003"
+    },
+    {
+      "id": "gh:rocketlab:7993738003",
+      "company": "Rocket Lab",
+      "title": "Business Development Intern Summer 2027",
+      "location": "Toronto, CAN",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7993738003"
+    },
+    {
+      "id": "gh:rocketlab:7986748003",
+      "company": "Rocket Lab",
+      "title": "Combustion Devices Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986748003"
+    },
+    {
+      "id": "gh:rocketlab:7998598003",
+      "company": "Rocket Lab",
+      "title": "Electrical Engineering Intern Summer 2027",
+      "location": "Pasadena, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7998598003"
+    },
+    {
+      "id": "gh:rocketlab:7990043003",
+      "company": "Rocket Lab",
+      "title": "Electrical Engineering Intern Summer 2027",
+      "location": "Toronto, CAN",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7990043003"
+    },
+    {
+      "id": "gh:rocketlab:7990683003",
+      "company": "Rocket Lab",
+      "title": "Electrical Engineering Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7990683003"
+    },
+    {
+      "id": "gh:rocketlab:7989722003",
+      "company": "Rocket Lab",
+      "title": "Flight Software Intern Summer 2027",
+      "location": "Littleton, CO",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7989722003"
+    },
+    {
+      "id": "gh:rocketlab:7990365003",
+      "company": "Rocket Lab",
+      "title": "Fluid Component Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Mechanical"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7990365003"
+    },
+    {
+      "id": "gh:rocketlab:7986794003",
+      "company": "Rocket Lab",
+      "title": "Fluid Systems Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Mechanical",
+        "Systems"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986794003"
+    },
+    {
+      "id": "gh:rocketlab:8001401003",
+      "company": "Rocket Lab",
+      "title": "Government Operations Intern Summer 2027",
+      "location": "Littleton, CO",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-10-02",
+      "first_seen": "2026-10-02",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/8001401003"
+    },
+    {
+      "id": "gh:rocketlab:7992754003",
+      "company": "Rocket Lab",
+      "title": "Government Operations Intern Summer 2027",
+      "location": "Washington, DC",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-10-02",
+      "first_seen": "2026-10-02",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7992754003"
+    },
+    {
+      "id": "gh:rocketlab:7990268003",
+      "company": "Rocket Lab",
+      "title": "HITL Engineering Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7990268003"
+    },
+    {
+      "id": "gh:rocketlab:7989063003",
+      "company": "Rocket Lab",
+      "title": "Indirect Procurement Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7989063003"
+    },
+    {
+      "id": "gh:rocketlab:7987250003",
+      "company": "Rocket Lab",
+      "title": "Integration & Test Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Systems",
+        "Test / Integration"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7987250003"
+    },
+    {
+      "id": "gh:rocketlab:7984564003",
+      "company": "Rocket Lab",
+      "title": "Manufacturing Engineering Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Manufacturing / Industrial"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7984564003"
+    },
+    {
+      "id": "gh:rocketlab:7988835003",
+      "company": "Rocket Lab",
+      "title": "Manufacturing Engineering Intern Summer 2027",
+      "location": "Middle River, MD",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Manufacturing / Industrial"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7988835003"
+    },
+    {
+      "id": "gh:rocketlab:7996623003",
+      "company": "Rocket Lab",
+      "title": "Manufacturing Engineering Intern Summer 2027",
+      "location": "Wallops Island, VA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Manufacturing / Industrial"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7996623003"
+    },
+    {
+      "id": "gh:rocketlab:7991448003",
+      "company": "Rocket Lab",
+      "title": "Mechanical Engineering Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Mechanical"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7991448003"
+    },
+    {
+      "id": "gh:rocketlab:7989904003",
+      "company": "Rocket Lab",
+      "title": "Mechanical Engineering Intern Summer 2027",
+      "location": "Silver Spring, MD",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Mechanical"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7989904003"
+    },
+    {
+      "id": "gh:rocketlab:7991769003",
+      "company": "Rocket Lab",
+      "title": "Mechanical Engineering Intern Summer 2027",
+      "location": "Toronto, CAN",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Mechanical"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7991769003"
+    },
+    {
+      "id": "gh:rocketlab:7992102003",
+      "company": "Rocket Lab",
+      "title": "Optical Engineering Intern Summer 2027",
+      "location": "Tucson, AZ",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7992102003"
+    },
+    {
+      "id": "gh:rocketlab:7990245003",
+      "company": "Rocket Lab",
+      "title": "People & Culture Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7990245003"
+    },
+    {
+      "id": "gh:rocketlab:7986820003",
+      "company": "Rocket Lab",
+      "title": "Propulsion Analyst Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Propulsion"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986820003"
+    },
+    {
+      "id": "gh:rocketlab:7986816003",
+      "company": "Rocket Lab",
+      "title": "Propulsion Design Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Propulsion"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986816003"
+    },
+    {
+      "id": "gh:rocketlab:7996576003",
+      "company": "Rocket Lab",
+      "title": "R&D Engineering Intern Summer 2027",
+      "location": "Albuquerque, NM",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7996576003"
+    },
+    {
+      "id": "gh:rocketlab:8013277003",
+      "company": "Rocket Lab",
+      "title": "RF Engineering Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-10-05",
+      "first_seen": "2026-10-05",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/8013277003"
+    },
+    {
+      "id": "gh:rocketlab:7986956003",
+      "company": "Rocket Lab",
+      "title": "Security Analyst Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986956003"
+    },
+    {
+      "id": "gh:rocketlab:7986961003",
+      "company": "Rocket Lab",
+      "title": "Security Analyst Intern Summer 2027",
+      "location": "Wallops Island, VA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986961003"
+    },
+    {
+      "id": "gh:rocketlab:7986963003",
+      "company": "Rocket Lab",
+      "title": "Security Analyst Intern Summer 2027",
+      "location": "Middle River, MD",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986963003"
+    },
+    {
+      "id": "gh:rocketlab:7986874003",
+      "company": "Rocket Lab",
+      "title": "Security Analyst Intern Summer 2027",
+      "location": "Albuquerque, NM",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986874003"
+    },
+    {
+      "id": "gh:rocketlab:7986690003",
+      "company": "Rocket Lab",
+      "title": "Structural Analysis Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Structures"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986690003"
+    },
+    {
+      "id": "gh:rocketlab:7999237003",
+      "company": "Rocket Lab",
+      "title": "Supply Chain Intern Summer 2027",
+      "location": "Silver Spring, MD",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-10-17",
+      "first_seen": "2026-10-17",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7999237003"
+    },
+    {
+      "id": "gh:rocketlab:7990063003",
+      "company": "Rocket Lab",
+      "title": "Supply Chain Intern Summer 2027",
+      "location": "Middle River, MD",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7990063003"
+    },
+    {
+      "id": "gh:rocketlab:7984568003",
+      "company": "Rocket Lab",
+      "title": "Supply Chain Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7984568003"
+    },
+    {
+      "id": "gh:rocketlab:7987046003",
+      "company": "Rocket Lab",
+      "title": "Systems Engineering Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Systems"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7987046003"
+    },
+    {
+      "id": "gh:rocketlab:7990272003",
+      "company": "Rocket Lab",
+      "title": "Systems Engineering Intern Summer 2027",
+      "location": "Chantilly, VA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Systems"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7990272003"
+    },
+    {
+      "id": "gh:rocketlab:7990270003",
+      "company": "Rocket Lab",
+      "title": "Systems Engineering Intern Summer 2027",
+      "location": "Tucson, AZ",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Systems"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7990270003"
+    },
+    {
+      "id": "gh:rocketlab:7990138003",
+      "company": "Rocket Lab",
+      "title": "Systems Engineering Intern Summer 2027",
+      "location": "Pasadena, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Systems"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7990138003"
+    },
+    {
+      "id": "gh:rocketlab:7990319003",
+      "company": "Rocket Lab",
+      "title": "Talent Acquisition Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7990319003"
+    },
+    {
+      "id": "gh:rocketlab:7987159003",
+      "company": "Rocket Lab",
+      "title": "Test Engineering Intern - Avionics Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Test / Integration"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7987159003"
+    },
+    {
+      "id": "gh:rocketlab:7990350003",
+      "company": "Rocket Lab",
+      "title": "Test Engineering Intern Summer 2027",
+      "location": "Stennis Space Center, MS",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Test / Integration"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7990350003"
+    },
+    {
+      "id": "gh:rocketlab:8003529003",
+      "company": "Rocket Lab",
+      "title": "Test Engineering Intern Summer 2027",
+      "location": "Wallops Island, VA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Test / Integration"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/8003529003"
+    },
+    {
+      "id": "gh:rocketlab:8000958003",
+      "company": "Rocket Lab",
+      "title": "Thermal Engineering Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Mechanical"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/8000958003"
+    },
+    {
+      "id": "gh:rocketlab:7987208003",
+      "company": "Rocket Lab",
+      "title": "Turbomachinery Intern Summer 2027",
+      "location": "Long Beach, CA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Propulsion"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/rocketlab/jobs/7987208003"
+    },
+    {
+      "id": "gh:star-catcher:4413079009",
+      "company": "Star Catcher",
+      "title": "Summer 2027 Engineering Internship",
+      "location": "Jacksonville, Florida, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/star-catcher/jobs/4413079009"
+    },
+    {
+      "id": "gh:star-catcher:4413215009",
+      "company": "Star Catcher",
+      "title": "Summer 2027 Marketing & Communications Internship",
+      "location": "Jacksonville, Florida, United States",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/star-catcher/jobs/4413215009"
+    },
+    {
+      "id": "gh:vardaspace:8010632003",
+      "company": "Varda Space Industries",
+      "title": "Aerodynamics & Analysis Engineering Internship - Summer 2027",
+      "location": "El Segundo, California, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Aerospace"
+      ],
+      "posted_at": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/vardaspace/jobs/8010632003"
+    },
+    {
+      "id": "gh:vardaspace:8010158003",
+      "company": "Varda Space Industries",
+      "title": "Avionics Engineering Internship - Summer 2027",
+      "location": "El Segundo, California, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/vardaspace/jobs/8010158003"
+    },
+    {
+      "id": "gh:vardaspace:8005821003",
+      "company": "Varda Space Industries",
+      "title": "Cybersecurity Internship - Summer 2027",
+      "location": "El Segundo, California, United States",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/vardaspace/jobs/8005821003"
+    },
+    {
+      "id": "gh:vardaspace:7527870003",
+      "company": "Varda Space Industries",
+      "title": "Environmental Health & Safety (EHS) Internship – Summer 2027",
+      "location": "El Segundo, California, United States",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-10-16",
+      "first_seen": "2026-10-16",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/vardaspace/jobs/7527870003"
+    },
+    {
+      "id": "gh:vardaspace:8010159003",
+      "company": "Varda Space Industries",
+      "title": "Flight Software Internship - Summer 2027",
+      "location": "El Segundo, California, United States",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Software"
+      ],
+      "posted_at": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/vardaspace/jobs/8010159003"
+    },
+    {
+      "id": "gh:vardaspace:8005846003",
+      "company": "Varda Space Industries",
+      "title": "Formulation Science Internship - Summer 2027",
+      "location": "El Segundo, California, United States",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/vardaspace/jobs/8005846003"
+    },
+    {
+      "id": "gh:vardaspace:7865601003",
+      "company": "Varda Space Industries",
+      "title": "Guidance, Navigation & Controls (GNC) Internship - Summer 2027",
+      "location": "El Segundo, California, United States",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "GNC / Controls"
+      ],
+      "posted_at": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/vardaspace/jobs/7865601003"
+    },
+    {
+      "id": "gh:vardaspace:8010166003",
+      "company": "Varda Space Industries",
+      "title": "Manufacturing Engineering Internship - Summer 2027",
+      "location": "El Segundo, California, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Manufacturing / Industrial"
+      ],
+      "posted_at": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/vardaspace/jobs/8010166003"
+    },
+    {
+      "id": "gh:vardaspace:8010168003",
+      "company": "Varda Space Industries",
+      "title": "Mechanisms & Payload Internship - Summer 2027",
+      "location": "El Segundo, California, United States",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Mechanical"
+      ],
+      "posted_at": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/vardaspace/jobs/8010168003"
+    },
+    {
+      "id": "gh:vardaspace:8010682003",
+      "company": "Varda Space Industries",
+      "title": "Mission Operations Internship - Summer 2027",
+      "location": "El Segundo, California, United States",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/vardaspace/jobs/8010682003"
+    },
+    {
+      "id": "gh:vardaspace:8010169003",
+      "company": "Varda Space Industries",
+      "title": "Propulsion Engineering Internship - Summer 2027",
+      "location": "El Segundo, California, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Propulsion"
+      ],
+      "posted_at": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/vardaspace/jobs/8010169003"
+    },
+    {
+      "id": "gh:vardaspace:8010167003",
+      "company": "Varda Space Industries",
+      "title": "Structures Engineering Internship - Summer 2027",
+      "location": "El Segundo, California, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Structures"
+      ],
+      "posted_at": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/vardaspace/jobs/8010167003"
+    },
+    {
+      "id": "gh:vardaspace:8010172003",
+      "company": "Varda Space Industries",
+      "title": "Thermal Engineering Internship - Summer 2027",
+      "location": "El Segundo, California, United States",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Mechanical"
+      ],
+      "posted_at": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/vardaspace/jobs/8010172003"
+    },
+    {
+      "id": "gh:vardaspace:8010170003",
+      "company": "Varda Space Industries",
+      "title": "Vehicle Integration & Test Internship - Summer 2027",
+      "location": "El Segundo, California, United States",
+      "stage": "Internship",
+      "industry": "Space Systems",
+      "disciplines": [
+        "Systems",
+        "Test / Integration"
+      ],
+      "posted_at": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "deadline": "",
+      "apply_url": "https://job-boards.greenhouse.io/vardaspace/jobs/8010170003"
+    },
+    {
+      "id": "wd:boeing:JR2026521717",
+      "company": "Boeing",
+      "title": "Boeing Summer 2027 Internship Program (Paid) – Security & Fire Operation (S&FO)",
+      "location": "USA - Everett, WA",
+      "stage": "Internship",
+      "industry": "Aviation",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boeing.wd1.myworkdayjobs.com/INTERN/job/USA---Everett-WA/Boeing-Summer-2027-Internship-Program--Paid----Security---Fire-Operation--S-FO-_JR2026521717"
+    },
+    {
+      "id": "wd:boeing:JR2026519225",
+      "company": "Boeing",
+      "title": "Boeing Summer 2027 Internship Program (PAID) – Finance (Evergreen)",
+      "location": "USA - Hazelwood, MO",
+      "stage": "Internship",
+      "industry": "Aviation",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boeing.wd1.myworkdayjobs.com/INTERN/job/USA---Hazelwood-MO/Boeing-Summer-2027-Internship-Program--PAID----Finance--Evergreen-_JR2026519225"
+    },
+    {
+      "id": "wd:boeing:JR2026520976",
+      "company": "Boeing",
+      "title": "Boeing Summer 2027 Internship Program (Paid) – Data Analytics Intern",
+      "location": "USA - Everett, WA",
+      "stage": "Internship",
+      "industry": "Aviation",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boeing.wd1.myworkdayjobs.com/INTERN/job/USA---Everett-WA/Boeing-Summer-2027-Internship-Program--Paid----Data-Analytics-Intern_JR2026520976"
+    },
+    {
+      "id": "wd:boeing:JR2026519268",
+      "company": "Boeing",
+      "title": "Boeing Summer 2027 Internship Program (Paid) - Business Operations",
+      "location": "USA - Everett, WA",
+      "stage": "Internship",
+      "industry": "Aviation",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boeing.wd1.myworkdayjobs.com/INTERN/job/USA---Everett-WA/Boeing-Summer-2027-Internship-Program--Paid----Business-Operations_JR2026519268"
+    },
+    {
+      "id": "wd:boeing:JR2026521026",
+      "company": "Boeing",
+      "title": "Boeing Summer 2027 Internship Program (Paid) - Program Management",
+      "location": "USA - Arlington, VA",
+      "stage": "Internship",
+      "industry": "Aviation",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boeing.wd1.myworkdayjobs.com/INTERN/job/USA---Arlington-VA/Boeing-Summer-2027-Internship-Program--Paid----Program-Management_JR2026521026"
+    },
+    {
+      "id": "wd:boeing:JR2026519410",
+      "company": "Boeing",
+      "title": "Boeing Summer 2027 Internship Program (Paid) - Supply Chain",
+      "location": "USA - Everett, WA",
+      "stage": "Internship",
+      "industry": "Aviation",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boeing.wd1.myworkdayjobs.com/INTERN/job/USA---Everett-WA/Boeing-Summer-2027-Internship-Program--Paid----Supply-Chain_JR2026519410"
+    },
+    {
+      "id": "wd:boeing:JR2026520801",
+      "company": "Boeing",
+      "title": "Boeing Business Internship Program (Paid) Summer 2027 - Human Resources",
+      "location": "USA - Everett, WA",
+      "stage": "Internship",
+      "industry": "Aviation",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boeing.wd1.myworkdayjobs.com/INTERN/job/USA---Everett-WA/Boeing-Business-Internship-Program--Paid--Summer-2027---Human-Resources_JR2026520801"
+    },
+    {
+      "id": "wd:boeing:JR2026505093",
+      "company": "Boeing",
+      "title": "Boeing Summer 2027 Internship Program (Paid) – Engineering",
+      "location": "USA - Seattle, WA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boeing.wd1.myworkdayjobs.com/INTERN/job/USA---Seattle-WA/Boeing-Summer-2027-Internship-Program--Paid----Engineering_JR2026505093"
+    },
+    {
+      "id": "wd:boeing:JR2026519532",
+      "company": "Boeing",
+      "title": "Boeing Summer 2027 Internship Program (Paid) - Methods Process Analyst",
+      "location": "USA - Seattle, WA",
+      "stage": "Internship",
+      "industry": "Aviation",
+      "disciplines": [
+        "Manufacturing / Industrial"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boeing.wd1.myworkdayjobs.com/INTERN/job/USA---Seattle-WA/Boeing-Summer-2027-Internship-Program--Paid----Methods-Process-Analyst_JR2026519532"
+    },
+    {
+      "id": "wd:boeing:JR2026521015",
+      "company": "Boeing",
+      "title": "Boeing Summer 2027 Internship Program (Paid) - Facilities Engineering",
+      "location": "USA - Everett, WA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boeing.wd1.myworkdayjobs.com/INTERN/job/USA---Everett-WA/Boeing-Summer-2027-Internship-Program--Paid----Facilities-Engineering_JR2026521015"
+    },
+    {
+      "id": "wd:boeing:JR2026520992",
+      "company": "Boeing",
+      "title": "Boeing Summer 2027 Internship Program (Paid) - Global Real Estate and Facilities & Property Management",
+      "location": "USA - Everett, WA",
+      "stage": "Internship",
+      "industry": "Aviation",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boeing.wd1.myworkdayjobs.com/INTERN/job/USA---Everett-WA/Boeing-Summer-2027-Internship-Program--Paid----Global-Real-Estate-and-Facilities---Property-Management_JR2026520992"
+    },
+    {
+      "id": "wd:boeing:JR2026520439",
+      "company": "Boeing",
+      "title": "Boeing Summer 2027 Internship Program (Paid) - Quality Engineering Intern",
+      "location": "USA - Seattle, WA",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Quality / Reliability"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boeing.wd1.myworkdayjobs.com/INTERN/job/USA---Seattle-WA/Boeing-Summer-2027-Internship-Program--Paid----Quality-Engineering-Intern_JR2026520439"
+    },
+    {
+      "id": "wd:boeing:JR2026520392",
+      "company": "Boeing",
+      "title": "Boeing Summer 2027 Internship Program (Paid) – Quality Specialist",
+      "location": "USA - Seattle, WA",
+      "stage": "Internship",
+      "industry": "Aviation",
+      "disciplines": [
+        "Quality / Reliability"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boeing.wd1.myworkdayjobs.com/INTERN/job/USA---Seattle-WA/Boeing-Summer-2027-Internship-Program--Paid----Quality-Specialist_JR2026520392"
+    },
+    {
+      "id": "wd:boeing:JR2026518829",
+      "company": "Boeing",
+      "title": "Boeing Summer 2027 Internship Program (Paid) – Communications Intern",
+      "location": "USA - Arlington, VA",
+      "stage": "Internship",
+      "industry": "Aviation",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boeing.wd1.myworkdayjobs.com/INTERN/job/USA---Arlington-VA/Boeing-Summer-2027-Internship-Program--Paid----Communications-Intern_JR2026518829-1"
+    },
+    {
+      "id": "wd:boeing:JR2026518830",
+      "company": "Boeing",
+      "title": "Boeing Summer 2027 Internship Program (Paid) - Sales and Marketing",
+      "location": "USA - Seattle, WA",
+      "stage": "Internship",
+      "industry": "Aviation",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boeing.wd1.myworkdayjobs.com/INTERN/job/USA---Seattle-WA/Boeing-Summer-2027-Internship-Program--Paid----Sales-and-Marketing_JR2026518830"
+    },
+    {
+      "id": "wd:boeing:JR2026520791",
+      "company": "Boeing",
+      "title": "Boeing Summer 2027 Internship Program (Paid) – Information Digital Technology & Security (IDT&S)",
+      "location": "USA - Everett, WA",
+      "stage": "Internship",
+      "industry": "Aviation",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://boeing.wd1.myworkdayjobs.com/INTERN/job/USA---Everett-WA/Boeing-Summer-2027-Internship-Program--Paid----Information-Digital-Technology---Security--IDT-S-_JR2026520791"
+    },
+    {
+      "id": "page:United Launch Alliance:https://jobs.ulalaunch.com/job/Cape-Canaveral-Mechanical-Engineering-Internship-Summer-2027-FL-32925/1427396400/",
+      "company": "United Launch Alliance",
+      "title": "Mechanical Engineering Internship - Summer 2027",
+      "location": "",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Mechanical"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.ulalaunch.com/job/Cape-Canaveral-Mechanical-Engineering-Internship-Summer-2027-FL-32925/1427396400/"
+    },
+    {
+      "id": "page:United Launch Alliance:https://jobs.ulalaunch.com/job/Cape-Canaveral-Civil%E2%80%AFEngineering-Internship-Summer-2027-FL-32925/1427396600/",
+      "company": "United Launch Alliance",
+      "title": "Civil Engineering Internship - Summer 2027",
+      "location": "",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Structures"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.ulalaunch.com/job/Cape-Canaveral-Civil%E2%80%AFEngineering-Internship-Summer-2027-FL-32925/1427396600/"
+    },
+    {
+      "id": "page:United Launch Alliance:https://jobs.ulalaunch.com/job/Decatur-Material-Requirements-Planning-Specialist-%28MRP%29-Internship-Summer-2027-AL-35601/1427398800/",
+      "company": "United Launch Alliance",
+      "title": "Material Requirements Planning Specialist (MRP) Internship - Summer 2027",
+      "location": "",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Materials"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.ulalaunch.com/job/Decatur-Material-Requirements-Planning-Specialist-%28MRP%29-Internship-Summer-2027-AL-35601/1427398800/"
+    },
+    {
+      "id": "page:United Launch Alliance:https://jobs.ulalaunch.com/job/Decatur-Weld-Engineering-Internship-Summer-2027-AL-35601/1427397200/",
+      "company": "United Launch Alliance",
+      "title": "Weld Engineering Internship - Summer 2027",
+      "location": "",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.ulalaunch.com/job/Decatur-Weld-Engineering-Internship-Summer-2027-AL-35601/1427397200/"
+    },
+    {
+      "id": "page:United Launch Alliance:https://jobs.ulalaunch.com/job/Centennial-Software-Engineering-Internship-Summer-2027-CO-80112/1427398300/",
+      "company": "United Launch Alliance",
+      "title": "Software Engineering Internship Summer 2027",
+      "location": "",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.ulalaunch.com/job/Centennial-Software-Engineering-Internship-Summer-2027-CO-80112/1427398300/"
+    },
+    {
+      "id": "page:United Launch Alliance:https://jobs.ulalaunch.com/job/Centennial-Avionics-&-Electrical-Engineering-Internship-Summer-2027-CO-80112/1427399200/",
+      "company": "United Launch Alliance",
+      "title": "Avionics & Electrical Engineering Internship Summer 2027",
+      "location": "",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Electrical / Electronics"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.ulalaunch.com/job/Centennial-Avionics-&-Electrical-Engineering-Internship-Summer-2027-CO-80112/1427399200/"
+    },
+    {
+      "id": "page:United Launch Alliance:https://jobs.ulalaunch.com/job/Centennial-Material-and-Process-Engineering-Internship-Summer-2027-CO-80112/1427398900/",
+      "company": "United Launch Alliance",
+      "title": "Material and Process Engineering Internship Summer 2027",
+      "location": "",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Manufacturing / Industrial",
+        "Materials"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.ulalaunch.com/job/Centennial-Material-and-Process-Engineering-Internship-Summer-2027-CO-80112/1427398900/"
+    },
+    {
+      "id": "page:United Launch Alliance:https://jobs.ulalaunch.com/job/Decatur-Quality-Engineering-Internship-Summer-2027-AL-35601/1427398600/",
+      "company": "United Launch Alliance",
+      "title": "Quality Engineering Internship Summer 2027",
+      "location": "",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Quality / Reliability"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.ulalaunch.com/job/Decatur-Quality-Engineering-Internship-Summer-2027-AL-35601/1427398600/"
+    },
+    {
+      "id": "page:United Launch Alliance:https://jobs.ulalaunch.com/job/Decatur-Composite-Engineering-Internship-Summer-2027-AL-35601/1427397600/",
+      "company": "United Launch Alliance",
+      "title": "Composite Engineering Internship - Summer 2027",
+      "location": "",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Materials"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.ulalaunch.com/job/Decatur-Composite-Engineering-Internship-Summer-2027-AL-35601/1427397600/"
+    },
+    {
+      "id": "page:United Launch Alliance:https://jobs.ulalaunch.com/job/Centennial-Aerospace-Engineering-Internship-Summer-2027-CO-80112/1427399400/",
+      "company": "United Launch Alliance",
+      "title": "Aerospace Engineering Internship Summer 2027",
+      "location": "",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Aerospace"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.ulalaunch.com/job/Centennial-Aerospace-Engineering-Internship-Summer-2027-CO-80112/1427399400/"
+    },
+    {
+      "id": "page:United Launch Alliance:https://jobs.ulalaunch.com/job/Cape-Canaveral-Industrial-Engineering-Internship-Summer-2027-FL-32925/1427396900/",
+      "company": "United Launch Alliance",
+      "title": "Industrial Engineering Internship - Summer 2027",
+      "location": "",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Manufacturing / Industrial"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://jobs.ulalaunch.com/job/Cape-Canaveral-Industrial-Engineering-Internship-Summer-2027-FL-32925/1427396900/"
+    },
+    {
+      "id": "page:MIT Lincoln Laboratory:https://careers.ll.mit.edu/job/Lexington-Software-and-Electronics-Engineering-Intern-%28Summer-2027%29-Group-76-MA-02420/1431440000/",
+      "company": "MIT Lincoln Laboratory",
+      "title": "Software and Electronics Engineering Intern (Summer 2027) - Group 76",
+      "location": "",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Electrical / Electronics",
+        "Software"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://careers.ll.mit.edu/job/Lexington-Software-and-Electronics-Engineering-Intern-%28Summer-2027%29-Group-76-MA-02420/1431440000/"
+    },
+    {
+      "id": "page:MIT Lincoln Laboratory:https://careers.ll.mit.edu/job/Lexington-Optical-Engineering-Intern-Optical-Engineer-%28Summer-2027%29-Group-78-MA-02420/1433573800/",
+      "company": "MIT Lincoln Laboratory",
+      "title": "Optical Engineering Intern - Optical Engineer (Summer 2027) - Group 78",
+      "location": "",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Other Engineering"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://careers.ll.mit.edu/job/Lexington-Optical-Engineering-Intern-Optical-Engineer-%28Summer-2027%29-Group-78-MA-02420/1433573800/"
+    },
+    {
+      "id": "page:Gulfstream Aerospace:https://careers.gulfstream.com/job/Appleton-Summer-2027-Completions-Mechanical-Engineering-College-Intern-%28Appleton%2C-WI%29-WI-54911/1424361600/",
+      "company": "Gulfstream Aerospace",
+      "title": "Summer 2027 - Completions - Mechanical Engineering College Intern (Appleton, WI)",
+      "location": "",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Mechanical"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://careers.gulfstream.com/job/Appleton-Summer-2027-Completions-Mechanical-Engineering-College-Intern-%28Appleton%2C-WI%29-WI-54911/1424361600/"
+    },
+    {
+      "id": "page:Gulfstream Aerospace:https://careers.gulfstream.com/job/Savannah-Summer-2027-IEF-Stress-Engineering-Collegiate-Associate-Intern-GA-31401/1423689500/",
+      "company": "Gulfstream Aerospace",
+      "title": "Summer 2027 - IEF - Stress Engineering - Collegiate Associate Intern",
+      "location": "",
+      "stage": "Internship",
+      "industry": "Spaceflight",
+      "disciplines": [
+        "Structures"
+      ],
+      "posted_at": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "deadline": "",
+      "apply_url": "https://careers.gulfstream.com/job/Savannah-Summer-2027-IEF-Stress-Engineering-Collegiate-Associate-Intern-GA-31401/1423689500/"
+    }
+  ]
+}
