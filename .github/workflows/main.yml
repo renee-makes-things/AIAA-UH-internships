@@ -1,4 +1,4 @@
-name: Daily AIAA Internship Scan
+name: Daily AIAA Opportunity Scan
 
 on:
   # Lets you run it manually from the Actions tab
@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 jobs:
-  scan-internships:
+  scan-opportunitys:
     runs-on: ubuntu-latest
 
     steps:
@@ -28,28 +28,29 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run internship finder
-        run: python internship_finder.py
+      - name: Run opportunity finder
+        run: python opportunity_finder.py
 
-      - name: Save updated internship data
+      - name: Save updated opportunity data
         run: |
-          git config user.name "AIAA Internship Bot"
+          git config user.name "AIAA Opportunity Bot"
           git config user.email "actions@github.com"
 
           git add -A
 
           if git diff --cached --quiet; then
-            echo "No internship changes today."
+            echo "No opportunity changes today."
           else
-            git commit -m "Update internship listings"
+            git commit -m "Update opportunity listings"
             git push
           fi
 
-      - name: Upload latest internship tracker
+      - name: Upload latest opportunity tracker
         uses: actions/upload-artifact@v4
         with:
-          name: AIAA-UH-Summer-2027-Internships
+          name: AIAA-UH-Summer-2027-Opportunitys
           path: |
-            AIAA_UH_Summer_2027_Internships.xlsx
+            AIAA_UH_Summer_2027_Opportunitys.xlsx
             data/jobs.csv
+            data/roles.json
           if-no-files-found: warn
