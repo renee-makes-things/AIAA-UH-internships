@@ -17,7 +17,10 @@ CLOSING_SOON_DAYS = 14
 
 INTERN = re.compile(r'\b(intern|internship|co-?op|student)\b', re.I)
 SEASON = re.compile(r'(summer\s*2027|2027\s*summer|may\s*2027|june\s*2027)', re.I)
-ENGINEERING = re.compile(r'(mechanical|aerospace|manufactur|production|test|structures?|mechanisms?|propulsion|avionics|electrical|systems?|integration|flight|materials?|quality|design|engineering)', re.I)
+ENGINEERING = re.compile(r'(mechanical|aerospace|manufactur|industrial|production|test|structures?|mechanisms?|propulsion|avionics|electrical|electronics|embedded|software|computer|systems?|integration|flight|materials?|quality|reliability|controls?|guidance|navigation|GNC|robotics?|autonomy|design|engineering)', re.I)
+EARLY_TITLE = re.compile(r'\b(new\s*grad(?:uate)?|early\s*career|entry[- ]level|associate\s+(?:engineer|engineering)|engineer\s+i\b|engineering\s+i\b|junior\s+(?:engineer|engineering))\b', re.I)
+EARLY_BODY = re.compile(r'(new\s*grad(?:uate)?|recent\s*graduate|early\s*career|entry[- ]level|0\s*[-–]\s*2\s+years|0\s*[-–]\s*1\s+years|less than\s*2\s+years|bachelor.{0,80}(?:no experience|0\s*[-–]\s*2\s+years))', re.I)
+SENIOR = re.compile(r'\b(senior|sr\.?|staff|principal|lead|manager|director|chief)\b', re.I)
 
 MONTHS = {m.lower(): i for i, m in enumerate([
     '', 'January','February','March','April','May','June','July','August','September','October','November','December'
@@ -51,14 +54,54 @@ def clean(s):
     s = html.unescape(s or '')
     return re.sub(r'<[^>]+>', ' ', s).replace('\n',' ').strip()
 
+def role_stage(title, text):
+    """Return Internship, New Grad / Early Career, or None.
+
+    Engineer I alone is intentionally insufficient: generic level-I titles need
+    corroborating early-career language in the posting body.
+    """
+    full=' '.join([title or '', text or ''])
+    if INTERN.search(full) and SEASON.search(full) and ENGINEERING.search(full):
+        return 'Internship'
+    if SENIOR.search(title or '') or not ENGINEERING.search(full):
+        return None
+    explicit=bool(re.search(r'\b(new\s*grad(?:uate)?|early\s*career|entry[- ]level|associate\s+(?:engineer|engineering)|junior\s+(?:engineer|engineering))\b', title or '', re.I))
+    level_one=bool(re.search(r'\b(?:engineer|engineering)\s+i\b', title or '', re.I))
+    if explicit or (level_one and EARLY_BODY.search(text or '')):
+        return 'New Grad / Early Career'
+    return None
+
+def classify_industry(company, title, text):
+    s=' '.join([company,title,text]).lower()
+    rules=[
+      ('Exploration',r'rover|lander|habitat|spacesuit|space suit|lunar|moon|surface system'),
+      ('Spaceflight',r'rocket|launch|propulsion|engine|booster|reentry|re-entry'),
+      ('Space Systems',r'spacecraft|satellite|space station|orbital|payload'),
+      ('Defense & High-Speed Flight',r'hypersonic|missile|weapon|military|defense|defence'),
+      ('Robotics & Autonomous Systems',r'robot|autonom|unmanned|uas\b|uav\b|drone'),
+      ('Aviation',r'aircraft|aviation|airplane|aeronaut|rotorcraft|helicopter|evtol'),
+      ('Government & Research',r'nasa|national lab|research center|research centre'),
+      ('Manufacturing & Suppliers',r'manufactur|production|supplier|materials|machining|composite')]
+    for label,pat in rules:
+        if re.search(pat,s,re.I): return label
+    return 'Space Systems'
+
+def classify_disciplines(title, text):
+    s=' '.join([title,text]).lower(); out=[]
+    rules=[('Aerospace',r'aerospace|aerodynamics?'),('Mechanical',r'mechanical|mechanism|thermal|fluids?'),('Electrical / Electronics',r'electrical|electronics|pcb|circuit'),('Computer / Embedded',r'embedded|firmware|computer engineering'),('Software',r'software|developer|programmer'),('Systems',r'systems? engineer|systems? integration'),('GNC / Controls',r'guidance|navigation|controls?|gnc\b'),('Manufacturing / Industrial',r'manufactur|industrial|production|process engineer'),('Materials',r'materials?|metallurg|composite'),('Test / Integration',r'test|integration|verification|validation'),('Propulsion',r'propulsion|rocket engine|turbomach'),('Structures',r'structur|stress|loads'),('Quality / Reliability',r'quality|reliability')]
+    for label,pat in rules:
+        if re.search(pat,s,re.I): out.append(label)
+    return out or ['Other Engineering']
+
 def greenhouse(c):
     url=f"https://boards-api.greenhouse.io/v1/boards/{c['token']}/jobs?content=true"
     r=requests.get(url,timeout=30); r.raise_for_status()
     out=[]
     for j in r.json().get('jobs',[]): 
         text=' '.join([j.get('title',''), clean(j.get('content',''))])
-        if INTERN.search(text) and SEASON.search(text) and ENGINEERING.search(text):
-            out.append({'key':f"gh:{c['token']}:{j['id']}",'company':c['company'],'title':j.get('title',''),
+        stage=role_stage(j.get('title',''), text)
+        if stage:
+            out.append({'key':f"gh:{c['token']}:{j['id']}",'company':c['company'],'title':j.get('title',''),'stage':stage,'text':text,
                         'location':(j.get('location') or {}).get('name',''),'deadline':extract_deadline(text),'url':j.get('absolute_url','')})
     return out
 
@@ -68,9 +111,10 @@ def lever(c):
     out=[]
     for j in r.json():
         text=' '.join([j.get('text',''), clean(j.get('descriptionPlain','')), clean(j.get('additionalPlain',''))])
-        if INTERN.search(text) and SEASON.search(text) and ENGINEERING.search(text):
+        stage=role_stage(j.get('text',''), text)
+        if stage:
             cats=j.get('categories') or {}
-            out.append({'key':f"lever:{c['token']}:{j['id']}",'company':c['company'],'title':j.get('text',''),
+            out.append({'key':f"lever:{c['token']}:{j['id']}",'company':c['company'],'title':j.get('text',''),'stage':stage,'text':text,
                         'location':cats.get('location',''),'deadline':extract_deadline(text),'url':j.get('hostedUrl','')})
     return out
 
@@ -91,11 +135,12 @@ def workday(c):
             except Exception:
                 d={}
             text=' '.join([title, clean(d.get('jobDescription','')), str(d.get('additionalLocations',''))])
-            if INTERN.search(text) and SEASON.search(text) and ENGINEERING.search(text):
+            stage=role_stage(title,text)
+            if stage:
                 url=d.get('externalUrl') or ('https://'+c['host']+ext)
                 loc=d.get('location') or j.get('locationsText','')
                 jid=d.get('jobReqId') or ext
-                out.append({'key':f"wd:{c['tenant']}:{jid}",'company':c['company'],'title':title,'location':loc,'deadline':extract_deadline(text),'url':url})
+                out.append({'key':f"wd:{c['tenant']}:{jid}",'company':c['company'],'title':title,'stage':stage,'text':text,'location':loc,'deadline':extract_deadline(text),'url':url})
         offset += limit
         if offset >= data.get('total',0): break
     return out
@@ -122,12 +167,13 @@ def careers_page(c):
             parent=a.parent.get_text(' ',strip=True) if a.parent else ''
             text=clean(' '.join([a.get_text(' ',strip=True), parent]))
             if not text or href in seen: continue
-            if INTERN.search(text) and SEASON.search(text) and ENGINEERING.search(text):
+            stage=role_stage(a.get_text(' ',strip=True),text)
+            if stage:
                 seen.add(href)
                 title=a.get_text(' ',strip=True) or text[:180]
                 key='page:'+c['company']+':'+href
                 out.append({'key':key,'company':c['company'],'title':title[:220],
-                            'location':'','deadline':extract_deadline(text),'url':href})
+                            'stage':stage,'text':text,'location':'','deadline':extract_deadline(text),'url':href})
     return out
 
 def classify_error(exc):
@@ -152,6 +198,25 @@ def save(rows):
     fields=['key','company','title','location','status','first_seen','last_seen','deadline','url']
     with DB.open('w',newline='',encoding='utf-8') as f:
         w=csv.DictWriter(f,fieldnames=fields); w.writeheader(); w.writerows(rows)
+
+def export_roles_json(rows):
+    """Normalized feed consumed by GitHub Pages and, later, README generation."""
+    live=[]
+    for r in rows:
+        if r.get('status') not in ('NEW','OPEN'): continue
+        text=r.get('text','')
+        stage=r.get('stage') or ('Internship' if INTERN.search(r.get('title','')) else 'New Grad / Early Career')
+        live.append({
+            'id':r['key'],'company':r['company'],'title':r['title'],
+            'location':r.get('location',''),'stage':stage,
+            'industry':classify_industry(r['company'],r['title'],text),
+            'disciplines':classify_disciplines(r['title'],text),
+            'posted_at':r.get('posted_at') or r.get('first_seen',''),
+            'first_seen':r.get('first_seen',''),'deadline':r.get('deadline',''),
+            'apply_url':r.get('url','')
+        })
+    path=ROOT/'data'/'roles.json'; path.parent.mkdir(exist_ok=True)
+    path.write_text(json.dumps({'updated_at':TODAY,'roles':live},indent=2),encoding='utf-8')
 
 def style_sheet(ws):
     fill=PatternFill('solid',fgColor='16324F')
@@ -263,7 +328,7 @@ def main():
                 prev['status']='CLOSED'
             rows.append(prev)
 
-    save(rows); export_xlsx(rows, health)
+    save(rows); export_xlsx(rows, health); export_roles_json(rows)
     ok=sum(h['health']=='OK' for h in health); unknown=sum(h['health']=='UNKNOWN' for h in health)
     blocked=sum(h['health']=='BLOCKED' for h in health); errors=sum(h['health']=='ERROR' for h in health)
     print(f"Source health: {ok} OK, {unknown} UNKNOWN, {blocked} BLOCKED, {errors} ERROR")
