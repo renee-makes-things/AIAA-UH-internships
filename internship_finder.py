@@ -1,4 +1,5 @@
 import csv, html, json, re
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, datetime, timedelta
 from pathlib import Path
 import requests
@@ -356,24 +357,29 @@ def export_xlsx(rows, health):
 def main():
     companies=json.loads((ROOT/'companies.json').read_text())
     found={}; health=[]; successful_companies=set()
-    for c in companies:
-        try:
-            adapters={'greenhouse':greenhouse,'lever':lever,'workday':workday,'careers_page':careers_page,
-                      'sitemap_jobs':sitemap_jobs,'rss_jobs':rss_jobs,'phenom':phenom,'eightfold':eightfold}
-            if c['type'] not in adapters: raise ValueError(f"Unsupported source type: {c['type']}")
-            jobs=adapters[c['type']](c)
-            # API-backed sources can reliably report zero. Generic HTML pages cannot: many
-            # render jobs in JavaScript, so zero from them is UNKNOWN unless explicitly trusted.
-            if c['type'] in ('careers_page','phenom','eightfold') and len(jobs)==0 and not c.get('trust_zero',False):
-                state='UNKNOWN'; msg='Page fetched, but no verifiable Summer 2027 engineering internships were parsed; zero is not treated as authoritative.'
-            else:
-                state='OK'; msg='Successful source check.'; successful_companies.add(c['company'])
-            health.append(health_record(c,state,len(jobs),msg))
-            for j in jobs: found[j['key']]=j
-            print(f"{c['company']}: {state} - {len(jobs)} matches")
-        except Exception as e:
-            state,msg=classify_error(e); health.append(health_record(c,state,0,msg))
-            print(f"WARNING {c['company']}: {state} - {msg}")
+    adapters={'greenhouse':greenhouse,'lever':lever,'workday':workday,'careers_page':careers_page,
+              'sitemap_jobs':sitemap_jobs,'rss_jobs':rss_jobs,'phenom':phenom,'eightfold':eightfold}
+    def scan_company(c):
+        if c['type'] not in adapters: raise ValueError(f"Unsupported source type: {c['type']}")
+        return adapters[c['type']](c)
+    # Network-bound sources are independent; a bounded pool prevents slow/blocked
+    # employers from making a 90+ company scan take hours.
+    with ThreadPoolExecutor(max_workers=10) as pool:
+        futures={pool.submit(scan_company,c):c for c in companies}
+        for future in as_completed(futures):
+            c=futures[future]
+            try:
+                jobs=future.result()
+                if c['type'] in ('careers_page','phenom','eightfold') and len(jobs)==0 and not c.get('trust_zero',False):
+                    state='UNKNOWN'; msg='Source fetched, but no verifiable matching early-career engineering roles were parsed; zero is not authoritative.'
+                else:
+                    state='OK'; msg='Successful source check.'; successful_companies.add(c['company'])
+                health.append(health_record(c,state,len(jobs),msg))
+                for j in jobs: found[j['key']]=j
+                print(f"{c['company']}: {state} - {len(jobs)} matches",flush=True)
+            except Exception as e:
+                state,msg=classify_error(e); health.append(health_record(c,state,0,msg))
+                print(f"WARNING {c['company']}: {state} - {msg}",flush=True)
 
     old=load_old(); rows=[]
     for key,j in found.items():
