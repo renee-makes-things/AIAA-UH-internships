@@ -253,7 +253,7 @@ def load_old():
 
 def save(rows):
     DB.parent.mkdir(exist_ok=True)
-    fields=['key','company','title','location','status','first_seen','last_seen','deadline','url']
+    fields=['key','company','title','location','status','first_seen','last_seen','deadline','url','stage','text']
     with DB.open('w',newline='',encoding='utf-8') as f:
         w=csv.DictWriter(f,fieldnames=fields); w.writeheader(); w.writerows(rows)
 
