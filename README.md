@@ -1,53 +1,92 @@
-# AIAA UH Summer 2027 Internship Finder
+# 🚀 AIAA UH — Aerospace Internships & New Grad Roles
 
-Checks configured career boards daily for Summer 2027 engineering internships and generates an Excel tracker.
+A community-maintained, automated tracker for **aerospace, aviation, space, defense, robotics, manufacturing, and research opportunities** for University of Houston students.
 
-## Run locally
-1. Install Python 3.11+.
-2. `pip install -r requirements.txt`
-3. `python internship_finder.py`
+> ⭐ Texas and Houston opportunities are a priority, but the tracker covers roles across the United States.
 
-The script creates `data/jobs.csv` and `AIAA_UH_Summer_2027_Internships.xlsx`.
+## 🎓 New Grad / Early Career
 
-## Add companies
-Edit `companies.json`. For Greenhouse, the token is the part after `job-boards.greenhouse.io/`. For Lever, it is the part after `jobs.lever.co/`.
+> **Coming next:** the scanner is being expanded to include genuine entry-level and new-graduate engineering roles. A title such as *Engineer I* will not automatically qualify; the posting must show evidence that it is appropriate for a first post-bachelor's role.
 
-## Automatic daily scan
-Runs every day at 9:00 AM America/Chicago and commits changes back to the repository. You can also run it manually from the Actions tab.
+<!-- NEW_GRAD_JOBS_START -->
+| Company | Role | Location | Posted | Apply |
+|---|---|---|---|---|
+| _Scanner expansion in progress_ | — | — | — | — |
+<!-- NEW_GRAD_JOBS_END -->
 
-## Matching logic
-A posting must contain an internship/student term, a Summer 2027 term, and an engineering-relevant term. Adjust the regexes near the top of `internship_finder.py` to broaden or narrow results. Added a `watchlist.json` registry of **100+ aerospace/aviation/space employers** to migrate into automated feeds as their career systems are verified.
+## 🛠️ Internships
 
-The Workday adapter is intentionally configuration-driven (`host`, `tenant`, `site`). Boeing and GE Aerospace are included first. Workday tenants differ, so additional employers should only be enabled after their public CXS endpoint is verified. A failed company check prints a `WARNING` rather than silently counting the company as successfully scanned.
+The existing automated scanner checks configured employer career boards for Summer 2027 engineering internships. Generated results are stored in `data/jobs.csv` and the Excel tracker.
+
+<!-- INTERNSHIP_JOBS_START -->
+_Run the scanner to refresh the current internship dataset. The README generator will populate this section from the normalized job data._
+<!-- INTERNSHIP_JOBS_END -->
+
+## What belongs here
+
+The tracker covers opportunities across these AIAA UH interest areas:
+
+- 🚀 **Spaceflight** — rockets, propulsion, launch
+- 🛰️ **Space Systems** — spacecraft, satellites, stations
+- 🌙 **Exploration** — rovers, landers, habitats, spacesuits
+- ✈️ **Aviation** — commercial, general, electric and advanced aircraft
+- 🛡️ **Defense & High-Speed Flight** — military aircraft, missiles, hypersonics
+- 🤖 **Robotics & Autonomous Systems** — UAS, drones, autonomy
+- 🏭 **Manufacturing & Suppliers** — materials, components, production
+- 🔬 **Government & Research** — NASA, national labs, R&D
+
+Relevant disciplines include aerospace, mechanical, electrical/electronics, computer, embedded, software, systems, GNC/controls, manufacturing/industrial, materials, test/integration, propulsion, structures, quality/reliability, and other technical engineering roles.
+
+## Automation
+
+The current scanner runs automatically and safely preserves previously known roles when an employer source is blocked or cannot be verified.
+
+### Current source adapters
 
 - `greenhouse` — Greenhouse public job-board API
 - `lever` — Lever public Postings API
 - `workday` — Workday public CXS endpoint
-- `careers_page` — conservative parsing of official server-rendered career search pages
+- `careers_page` — conservative parsing of official server-rendered career pages
 
-**Important:** `careers_page` sources are best-effort checks of official employer pages. JavaScript-heavy sites may return zero results even when jobs exist; the script prints a warning on request failures. API-backed Greenhouse/Lever/Workday integrations are generally more reliable.
+API-backed Greenhouse, Lever, and verified Workday integrations are preferred. JavaScript-heavy career pages may not expose their inventory reliably.
 
-## Automatically generated AIAA UH views
-Every daily scan rebuilds the Excel workbook from the master job history. It now contains:
+## Data and generated views
 
-- **DASHBOARD** — live counts and the date of the latest run.
-- **ALL INTERNSHIPS** — complete history, including postings that later close.
-- **NEW TODAY** — live internships first discovered on the current run.
-- **NEW THIS WEEK** — live internships first discovered during the last 7 calendar days.
-- **TEXAS - HOUSTON** — live postings whose returned location matches Texas or major Texas aerospace hubs; Houston sorts first.
-- **CLOSING SOON** — live postings with an explicitly stated deadline in the next 14 days.
+The scanner currently produces:
 
-The deadline parser is intentionally conservative. If a career site does not expose a trustworthy deadline in the posting text, the scanner leaves the deadline blank rather than guessing. Change `CLOSING_SOON_DAYS` in `internship_finder.py` if the chapter wants a different warning window.
+- `data/jobs.csv` — master internship job data
+- `AIAA_UH_Summer_2027_Internships.xlsx` — chapter-friendly workbook
+- **NEW TODAY**
+- **NEW THIS WEEK**
+- **TEXAS - HOUSTON**
+- **CLOSING SOON**
+- **SOURCE HEALTH**
 
-## Source health and safe failure behavior
+The deadline parser is intentionally conservative. If an employer does not expose a trustworthy deadline, the tracker leaves it blank instead of guessing.
 
-The generated workbook includes a **SOURCE HEALTH** sheet. Each configured company is classified as:
+## Source health
 
-- **OK** — the source was successfully checked; zero is trusted only for API-backed or explicitly trusted sources.
-- **UNKNOWN** — the page loaded but the scanner could not reliably verify its job inventory (common with JavaScript-heavy career sites).
-- **BLOCKED** — the site rejected automated access (for example HTTP 403/429).
-- **ERROR** — invalid endpoint, server error, DNS failure, or another fetch/parser failure.
+Each configured employer is classified as:
 
-A failed/unknown source no longer causes previously known jobs to be marked CLOSED. Jobs are closed only after that company's source completes a trustworthy check and the job is absent.
+- **OK** — source successfully checked
+- **UNKNOWN** — source loaded but inventory could not be reliably verified
+- **BLOCKED** — automated access was rejected
+- **ERROR** — endpoint or request failed
 
-The Dashboard summarizes source health so chapter officers can see coverage quality without reading GitHub Actions logs.
+A failed or unknown source does **not** automatically close previously known jobs.
+
+## Run locally
+
+1. Install Python 3.11+.
+2. Run `pip install -r requirements.txt`.
+3. Run `python internship_finder.py`.
+
+## Add companies
+
+Edit `companies.json` for verified automated feeds. `watchlist.json` contains the broader aerospace/aviation/space employer registry being migrated into verified sources.
+
+---
+
+### Goal
+
+Build an aerospace-focused equivalent of the large community internship trackers: simple GitHub tables for students, structured data underneath, automated discovery and closure checking, and strict eligibility rules so the board stays useful instead of becoming a dump of unrelated job postings.
