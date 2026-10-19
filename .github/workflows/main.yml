@@ -3,6 +3,8 @@ name: Daily AIAA Opportunity Scan
 on:
   # Lets you run it manually from the Actions tab
   workflow_dispatch:
+  pull_request:
+    branches: [ main ]
 
   # Run every day at 9:00 AM Central
   # 14:00 UTC = 9 AM CDT
@@ -31,7 +33,20 @@ jobs:
       - name: Run opportunity finder
         run: python internship_finder.py
 
+      - name: Validate generated outputs
+        run: |
+          test -s data/jobs.csv
+          test -s data/roles.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=json.loads(Path('data/roles.json').read_text())
+          assert isinstance(p.get('roles'), list)
+          print(f"Validated {len(p['roles'])} live roles")
+          PY
+
       - name: Save updated opportunity data
+        if: github.event_name != 'pull_request'
         run: |
           git config user.name "AIAA Opportunity Bot"
           git config user.email "actions@github.com"
