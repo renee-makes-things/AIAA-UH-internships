@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AIAA UH Aerospace Companies</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="./"><b>AIAA</b><span>UH</span></a>
+  <nav>
+    <a href="./">Opportunities</a>
+    <a href="companies.html">Companies</a>
+    <a href="https://github.com/renee-makes-things/AIAA-UH-internships">GitHub</a>
+  </nav>
+</header>
+<main>
+  <section class="hero company-hero">
+    <p class="kicker">UNIVERSITY OF HOUSTON · AIAA</p>
+    <h1>Aerospace<br><i>Companies.</i></h1>
+    <p class="intro">Browse aerospace companies across space, aviation, defense, autonomy, manufacturing, and research. Search by company or filter by industry.</p>
+    <div class="numbers">
+      <div><b id="companyCount">—</b><span>companies</span></div>
+      <div><b id="hiringCount">—</b><span>confirmed hiring</span></div>
+    </div>
+  </section>
+
+  <section class="board">
+    <div class="search">
+      <input id="companyQ" placeholder="Search companies…">
+      <div class="filters company-filters">
+        <select id="companyIndustry"><option value="">All industries</option></select>
+        <select id="companyLocation">
+          <option value="">Anywhere in U.S.</option>
+          <option value="Houston">Houston</option>
+          <option value="Texas">Texas</option>
+        </select>
+        <select id="companyHiring">
+          <option value="">All companies</option>
+          <option value="yes">Confirmed hiring</option>
+        </select>
+      </div>
+      <div class="quick">
+        <button data-company-place="Houston">📍 Houston</button>
+        <button data-company-place="Texas">⭐ Texas</button>
+        <button data-company-hiring="yes">✓ Confirmed hiring</button>
+      </div>
+    </div>
+
+    <div class="bar"><b>COMPANIES</b><span id="companyStatusText">Loading…</span></div>
+    <div id="companyList"></div>
+    <div id="companyEmpty" class="empty" hidden>No matching companies.</div>
+  </section>
+</main>
+<footer>
+  <b>AIAA UH</b>
+  <span>Links open the company’s verified careers page when available, otherwise its main website.</span>
+</footer>
+<script src="companies-data.js"></script>
+<script src="companies.js?v=6"></script>
+</body>
+</html>
