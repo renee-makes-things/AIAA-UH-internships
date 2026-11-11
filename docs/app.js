@@ -1,5 +1,6 @@
 const $=id=>document.getElementById(id);
 let roles=[];
+let topCompanies=[];
 const industries=['Spaceflight','Space Systems','Exploration','Aviation','Defense & High-Speed Flight','Robotics & Autonomous Systems','Manufacturing & Suppliers','Government & Research'];
 const disciplines=['Aerospace','Mechanical','Electrical / Electronics','Computer / Embedded','Software','Systems','GNC / Controls','Manufacturing / Industrial','Materials','Test / Integration','Propulsion','Structures','Quality / Reliability','Other Engineering'];
 
@@ -11,12 +12,12 @@ function area(location){const s=String(location||'').toLowerCase();if(s.includes
 function esc(v){return String(v??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));}
 
 function render(){
- const q=$('q').value.trim().toLowerCase(), stage=$('stage').value, industry=$('industry').value, discipline=$('discipline').value, place=$('place').value, when=Number($('when').value||0);
+ const q=$('q').value.trim().toLowerCase(), company=$('company').value, stage=$('stage').value, industry=$('industry').value, discipline=$('discipline').value, place=$('place').value, when=Number($('when').value||0);
  const filtered=roles.filter(r=>{
   const ds=Array.isArray(r.disciplines)?r.disciplines:[];
   const blob=[r.company,r.title,r.location,r.industry,...ds].join(' ').toLowerCase();
   const a=area(r.location);
-  return(!q||blob.includes(q))&&(!stage||r.stage===stage)&&(!industry||r.industry===industry)&&(!discipline||ds.includes(discipline))&&(!place||(place==='Texas'?(a==='Texas'||a==='Houston'):a===place))&&(!when||freshnessDays(r)<when);
+  return(!q||blob.includes(q))&&(!company||(company==='__top10'?topCompanies.includes(r.company):r.company===company))&&(!stage||r.stage===stage)&&(!industry||r.industry===industry)&&(!discipline||ds.includes(discipline))&&(!place||(place==='Texas'?(a==='Texas'||a==='Houston'):a===place))&&(!when||freshnessDays(r)<when);
  }).sort((a,b)=>String(b.posted_at||'').localeCompare(String(a.posted_at||'')));
  $('status').textContent=filtered.length+' matching roles';
  $('empty').hidden=filtered.length!==0;
@@ -31,11 +32,16 @@ function render(){
 
 async function init(){
  addOptions('industry',industries);addOptions('discipline',disciplines);
- ['q','stage','industry','discipline','place','when'].forEach(id=>$(id).addEventListener(id==='q'?'input':'change',render));
+ ['q','company','stage','industry','discipline','place','when'].forEach(id=>$(id).addEventListener(id==='q'?'input':'change',render));
  document.querySelectorAll('.quick button').forEach(b=>b.addEventListener('click',()=>{if(b.dataset.place)$('place').value=b.dataset.place;if(b.dataset.stage)$('stage').value=b.dataset.stage;if(b.dataset.industry)$('industry').value=b.dataset.industry;render();}));
  try{
    roles=Array.isArray(window.AIAA_ROLES)?window.AIAA_ROLES:[];
    if(!roles.length) throw new Error('Bundled role data is empty');
+   const companyCounts=new Map();
+   roles.forEach(r=>{if(r.company)companyCounts.set(r.company,(companyCounts.get(r.company)||0)+1);});
+   const ranked=[...companyCounts].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]));
+   topCompanies=ranked.slice(0,10).map(([name])=>name);
+   ranked.forEach(([name,count])=>{const option=document.createElement('option');option.value=name;option.textContent=name+' ('+count+')';$('company').appendChild(option);});
    $('active').textContent=roles.length;
    $('newweek').textContent=roles.filter(r=>freshnessDays(r)<7).length;
    $('scanned').textContent=Number(window.AIAA_ACTIVE_SOURCES||0)||'—';
