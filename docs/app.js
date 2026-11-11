@@ -1,6 +1,8 @@
 const $=id=>document.getElementById(id);
 let roles=[];
 let topCompanies=[];
+let companyCounts=new Map();
+let selectedCompanies=new Set();
 const industries=['Spaceflight','Space Systems','Exploration','Aviation','Defense & High-Speed Flight','Robotics & Autonomous Systems','Manufacturing & Suppliers','Government & Research'];
 const disciplines=['Aerospace','Mechanical','Electrical / Electronics','Computer / Embedded','Software','Systems','GNC / Controls','Manufacturing / Industrial','Materials','Test / Integration','Propulsion','Structures','Quality / Reliability','Other Engineering'];
 
@@ -11,13 +13,50 @@ function freshnessDays(role){return ageDays(role.posted_at);}
 function area(location){const s=String(location||'').toLowerCase();if(s.includes('remote'))return'Remote';const houstonArea=/houston|webster|clear lake|league city|seabrook|nassau bay|friendswood|pearland|johnson space center|\bjsc\b|space center (?:blvd|boulevard)/;const ambiguousTexas=/(pasadena|deer park|la porte)/;if(houstonArea.test(s)||(ambiguousTexas.test(s)&&(/\btx\b|texas/.test(s))))return'Houston';if(/(^|[^a-z])tx([^a-z]|$)|texas/.test(s))return'Texas';return'Other U.S.';}
 function esc(v){return String(v??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));}
 
+function updateCompanySummary(){
+ const selected=selectedCompanies.size,total=companyCounts.size;
+ $('companySummary').textContent=selected===total?'All companies':selected===0?'No companies':selected+' of '+total+' companies';
+}
+function filterCompanyChoices(){
+ const q=$('companySearch').value.trim().toLowerCase();
+ $('companyChoices').querySelectorAll('label').forEach(label=>{
+  label.hidden=!label.dataset.name.includes(q);
+ });
+}
+function setCompanies(next){
+ selectedCompanies=next;
+ $('companyChoices').querySelectorAll('input[type="checkbox"]').forEach(input=>{input.checked=selectedCompanies.has(input.value);});
+ updateCompanySummary();
+ render();
+}
+function buildCompanyChoices(ranked){
+ const parent=$('companyChoices');
+ parent.replaceChildren();
+ ranked.forEach(([name,count],i)=>{
+  const label=document.createElement('label');
+  label.className='company-choice';
+  label.dataset.name=name.toLowerCase();
+  const input=document.createElement('input');
+  input.type='checkbox';input.value=name;input.checked=true;
+  input.addEventListener('change',()=>{
+   if(input.checked)selectedCompanies.add(name);else selectedCompanies.delete(name);
+   updateCompanySummary();render();
+  });
+  const title=document.createElement('span');title.textContent=name;
+  const number=document.createElement('small');number.textContent=count;
+  label.append(input,title,number);
+  parent.appendChild(label);
+ });
+ updateCompanySummary();
+}
+
 function render(){
- const q=$('q').value.trim().toLowerCase(), company=$('company').value, stage=$('stage').value, industry=$('industry').value, discipline=$('discipline').value, place=$('place').value, when=Number($('when').value||0);
+ const q=$('q').value.trim().toLowerCase(), stage=$('stage').value, industry=$('industry').value, discipline=$('discipline').value, place=$('place').value, when=Number($('when').value||0);
  const filtered=roles.filter(r=>{
   const ds=Array.isArray(r.disciplines)?r.disciplines:[];
   const blob=[r.company,r.title,r.location,r.industry,...ds].join(' ').toLowerCase();
   const a=area(r.location);
-  return(!q||blob.includes(q))&&(!company||(company==='__top10'?topCompanies.includes(r.company):r.company===company))&&(!stage||r.stage===stage)&&(!industry||r.industry===industry)&&(!discipline||ds.includes(discipline))&&(!place||(place==='Texas'?(a==='Texas'||a==='Houston'):a===place))&&(!when||freshnessDays(r)<when);
+  return(!q||blob.includes(q))&&selectedCompanies.has(r.company)&&(!stage||r.stage===stage)&&(!industry||r.industry===industry)&&(!discipline||ds.includes(discipline))&&(!place||(place==='Texas'?(a==='Texas'||a==='Houston'):a===place))&&(!when||freshnessDays(r)<when);
  }).sort((a,b)=>String(b.posted_at||'').localeCompare(String(a.posted_at||'')));
  $('status').textContent=filtered.length+' matching roles';
  $('empty').hidden=filtered.length!==0;
@@ -32,16 +71,21 @@ function render(){
 
 async function init(){
  addOptions('industry',industries);addOptions('discipline',disciplines);
- ['q','company','stage','industry','discipline','place','when'].forEach(id=>$(id).addEventListener(id==='q'?'input':'change',render));
+ ['q','stage','industry','discipline','place','when'].forEach(id=>$(id).addEventListener(id==='q'?'input':'change',render));
  document.querySelectorAll('.quick button').forEach(b=>b.addEventListener('click',()=>{if(b.dataset.place)$('place').value=b.dataset.place;if(b.dataset.stage)$('stage').value=b.dataset.stage;if(b.dataset.industry)$('industry').value=b.dataset.industry;render();}));
  try{
    roles=Array.isArray(window.AIAA_ROLES)?window.AIAA_ROLES:[];
    if(!roles.length) throw new Error('Bundled role data is empty');
-   const companyCounts=new Map();
+   companyCounts=new Map();
    roles.forEach(r=>{if(r.company)companyCounts.set(r.company,(companyCounts.get(r.company)||0)+1);});
    const ranked=[...companyCounts].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]));
    topCompanies=ranked.slice(0,10).map(([name])=>name);
-   ranked.forEach(([name,count])=>{const option=document.createElement('option');option.value=name;option.textContent=name+' ('+count+')';$('company').appendChild(option);});
+   selectedCompanies=new Set(companyCounts.keys());
+   buildCompanyChoices(ranked);
+   $('companySearch').addEventListener('input',filterCompanyChoices);
+   $('companyAll').addEventListener('click',()=>setCompanies(new Set(companyCounts.keys())));
+   $('companyNone').addEventListener('click',()=>setCompanies(new Set()));
+   $('companyTop').addEventListener('click',()=>setCompanies(new Set(topCompanies)));
    $('active').textContent=roles.length;
    $('newweek').textContent=roles.filter(r=>freshnessDays(r)<7).length;
    $('scanned').textContent=Number(window.AIAA_ACTIVE_SOURCES||0)||'—';
